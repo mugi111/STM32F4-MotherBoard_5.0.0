@@ -186,7 +186,7 @@ F 3 "" H 4900 3550 50  0000 C CNN
 	1    4900 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 5300 2700 2    60   Input ~ 0
+Text GLabel 5300 2700 2    60   Output ~ 0
 PushSW
 $Comp
 L SW_ROTARY SW?
@@ -302,13 +302,13 @@ Connection ~ 7850 1750
 Wire Wire Line
 	7700 1750 7700 1800
 Connection ~ 7700 1750
-Text GLabel 8150 2200 2    60   Input ~ 0
+Text GLabel 8150 2200 2    60   Output ~ 0
 RotarySW0
-Text GLabel 8150 2300 2    60   Input ~ 0
+Text GLabel 8150 2300 2    60   Output ~ 0
 RotarySW1
-Text GLabel 8150 2400 2    60   Input ~ 0
+Text GLabel 8150 2400 2    60   Output ~ 0
 RotarySW2
-Text GLabel 8150 2600 2    60   Input ~ 0
+Text GLabel 8150 2600 2    60   Output ~ 0
 RotarySW3
 $Comp
 L SW_PUSH SW?
@@ -367,7 +367,7 @@ Wire Wire Line
 Connection ~ 2900 4300
 Text GLabel 2750 4300 0    60   Input ~ 0
 NRST
-Text GLabel 7850 4100 2    60   Input ~ 0
+Text GLabel 7850 4100 2    60   Output ~ 0
 Write
 $Comp
 L SW_TOGLE_5P SW?

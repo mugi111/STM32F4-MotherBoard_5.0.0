@@ -518,4 +518,12 @@ U 589F8488
 F0 "LED" 79
 F1 "LED.sch" 79
 $EndSheet
+Wire Wire Line
+	2650 3350 2350 3350
+Text GLabel 2350 3350 0    60   Input ~ 0
+Write
+Wire Wire Line
+	2650 3550 2350 3550
+Text GLabel 2350 3550 0    60   Input ~ 0
+NRST
 $EndSCHEMATC

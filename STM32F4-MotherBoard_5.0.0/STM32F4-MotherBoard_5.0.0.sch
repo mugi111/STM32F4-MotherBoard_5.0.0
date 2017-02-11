@@ -177,29 +177,29 @@ Text GLabel 2350 5350 0    60   Input ~ 0
 ADC0
 Text GLabel 2350 5450 0    60   Input ~ 0
 ADC1
-Text GLabel 2350 5550 0    60   Input ~ 0
+Text GLabel 2350 5550 0    60   Output ~ 0
 XL
-Text GLabel 2350 5650 0    60   Input ~ 0
+Text GLabel 2350 5650 0    60   Output ~ 0
 YB
-Text GLabel 2350 5750 0    60   Input ~ 0
+Text GLabel 2350 5750 0    60   Output ~ 0
 XR
-Text GLabel 2350 5850 0    60   Input ~ 0
+Text GLabel 2350 5850 0    60   Output ~ 0
 YT
-Text GLabel 2350 5950 0    60   Input ~ 0
+Text GLabel 2350 5950 0    60   BiDi ~ 0
 DIO0_4
-Text GLabel 2350 6050 0    60   Input ~ 0
+Text GLabel 2350 6050 0    60   Output ~ 0
 RS-232(PC)_TX
 Text GLabel 2350 6150 0    60   Input ~ 0
 RS-232(PC)_RX
-Text GLabel 2350 6250 0    60   Input ~ 0
+Text GLabel 2350 6250 0    60   BiDi ~ 0
 DIO0_5
-Text GLabel 2350 6350 0    60   Input ~ 0
+Text GLabel 2350 6350 0    60   BiDi ~ 0
 DIO0_6
 Text GLabel 2350 6450 0    60   Input ~ 0
 SWDIO
 Text GLabel 2350 6550 0    60   Input ~ 0
 SWCLK
-Text GLabel 2350 6650 0    60   Input ~ 0
+Text GLabel 2350 6650 0    60   Output ~ 0
 LED
 Text GLabel 2350 6950 0    60   Input ~ 0
 ADC2
@@ -211,45 +211,45 @@ Text GLabel 2350 7350 0    60   Input ~ 0
 ENC0_A
 Text GLabel 2350 7450 0    60   Input ~ 0
 ENC0_B
-Text GLabel 2350 7550 0    60   Input ~ 0
+Text GLabel 2350 7550 0    60   BiDi ~ 0
 DIO0_7
-Text GLabel 2350 7650 0    60   Input ~ 0
+Text GLabel 2350 7650 0    60   BiDi ~ 0
 DIO0_0
 Text GLabel 2350 7750 0    60   Input ~ 0
 CAN_RX
-Text GLabel 2350 7850 0    60   Input ~ 0
+Text GLabel 2350 7850 0    60   Output ~ 0
 CAN_TX
 Text GLabel 2350 7950 0    60   Input ~ 0
 pushSW
-Text GLabel 2350 8050 0    60   Input ~ 0
+Text GLabel 2350 8050 0    60   BiDi ~ 0
 DIO0_2
-Text GLabel 2350 8150 0    60   Input ~ 0
+Text GLabel 2350 8150 0    60   BiDi ~ 0
 DIO0_3
-Text GLabel 12950 6950 2    60   Input ~ 0
+Text GLabel 12950 6950 2    60   BiDi ~ 0
 DIO0_1
 Text GLabel 12950 7050 2    60   Input ~ 0
 ADC4
 Text GLabel 12950 7150 2    60   Input ~ 0
 ADC5
-Text GLabel 12950 7250 2    60   Input ~ 0
+Text GLabel 12950 7250 2    60   BiDi ~ 0
 DIO1_6
 Text GLabel 12950 7350 2    60   Input ~ 0
 ADC6
 Text GLabel 12950 7450 2    60   Input ~ 0
 ADC7
-Text GLabel 12950 7550 2    60   Input ~ 0
+Text GLabel 12950 7550 2    60   Output ~ 0
 RS-232(Controller)_TX
 Text GLabel 12950 7650 2    60   Input ~ 0
 RS-232(Controller)_RX
-Text GLabel 12950 7750 2    60   Input ~ 0
+Text GLabel 12950 7750 2    60   BiDi ~ 0
 DIO1_0
-Text GLabel 12950 7850 2    60   Input ~ 0
+Text GLabel 12950 7850 2    60   BiDi ~ 0
 DIO1_1
 Text GLabel 12950 7950 2    60   Input ~ 0
 RotarySW0
 Text GLabel 12950 8150 2    60   Input ~ 0
 RotarySW1
-Text GLabel 12950 8050 2    60   Input ~ 0
+Text GLabel 12950 8050 2    60   BiDi ~ 0
 DIO1_2
 NoConn ~ 12650 8250
 NoConn ~ 12650 8350
@@ -374,37 +374,37 @@ Wire Wire Line
 	12950 6550 12650 6550
 Wire Wire Line
 	12650 6650 12950 6650
-Text GLabel 12950 5150 2    60   Input ~ 0
+Text GLabel 12950 5150 2    60   Output ~ 0
 FSMC_D2
-Text GLabel 12950 5250 2    60   Input ~ 0
+Text GLabel 12950 5250 2    60   Output ~ 0
 FSMC_D3
-Text GLabel 12950 5350 2    60   Input ~ 0
+Text GLabel 12950 5350 2    60   BiDi ~ 0
 DIO1_5
 Text GLabel 12950 5450 2    60   Input ~ 0
 RST
-Text GLabel 12950 5550 2    60   Input ~ 0
+Text GLabel 12950 5550 2    60   Output ~ 0
 RD
-Text GLabel 12950 5650 2    60   Input ~ 0
+Text GLabel 12950 5650 2    60   Output ~ 0
 WR
-Text GLabel 12950 5750 2    60   Input ~ 0
+Text GLabel 12950 5750 2    60   BiDi ~ 0
 DIO1_7
-Text GLabel 12950 5850 2    60   Input ~ 0
+Text GLabel 12950 5850 2    60   Output ~ 0
 CS
-Text GLabel 12950 5950 2    60   Input ~ 0
+Text GLabel 12950 5950 2    60   Output ~ 0
 FSMC_D13
-Text GLabel 12950 6050 2    60   Input ~ 0
+Text GLabel 12950 6050 2    60   Output ~ 0
 FSMC_D14
-Text GLabel 12950 6150 2    60   Input ~ 0
+Text GLabel 12950 6150 2    60   Output ~ 0
 FSMC_D15
 Text GLabel 12950 6350 2    60   Input ~ 0
 ENC1_A
-Text GLabel 12950 6250 2    60   Input ~ 0
+Text GLabel 12950 6250 2    60   Output ~ 0
 RS
 Text GLabel 12950 6450 2    60   Input ~ 0
 ENC1_B
-Text GLabel 12950 6550 2    60   Input ~ 0
+Text GLabel 12950 6550 2    60   Output ~ 0
 FSMC_D0
-Text GLabel 12950 6650 2    60   Input ~ 0
+Text GLabel 12950 6650 2    60   Output ~ 0
 FSMC_D1
 Wire Wire Line
 	12650 3350 12950 3350
@@ -442,9 +442,9 @@ Text GLabel 12950 3350 2    60   Input ~ 0
 RotarySW2
 Text GLabel 12950 3450 2    60   Input ~ 0
 RotarySW3
-Text GLabel 12950 3550 2    60   Input ~ 0
+Text GLabel 12950 3550 2    60   BiDi ~ 0
 DIO1_3
-Text GLabel 12950 3650 2    60   Input ~ 0
+Text GLabel 12950 3650 2    60   BiDi ~ 0
 DIO1_4
 Text GLabel 12950 3750 2    60   Input ~ 0
 ENC2_Z
@@ -452,23 +452,23 @@ Text GLabel 12950 3850 2    60   Input ~ 0
 ENC2_A
 Text GLabel 12950 3950 2    60   Input ~ 0
 ENC2_B
-Text GLabel 12950 4050 2    60   Input ~ 0
+Text GLabel 12950 4050 2    60   Output ~ 0
 FSMC_D4
-Text GLabel 12950 4150 2    60   Input ~ 0
+Text GLabel 12950 4150 2    60   Output ~ 0
 FSMC_D5
-Text GLabel 12950 4250 2    60   Input ~ 0
+Text GLabel 12950 4250 2    60   Output ~ 0
 FSMC_D6
-Text GLabel 12950 4350 2    60   Input ~ 0
+Text GLabel 12950 4350 2    60   Output ~ 0
 FSMC_D7
-Text GLabel 12950 4550 2    60   Input ~ 0
+Text GLabel 12950 4550 2    60   Output ~ 0
 FSMC_D9
-Text GLabel 12950 4450 2    60   Input ~ 0
+Text GLabel 12950 4450 2    60   Output ~ 0
 FSMC_D8
-Text GLabel 12950 4650 2    60   Input ~ 0
+Text GLabel 12950 4650 2    60   Output ~ 0
 FSMC_D10
-Text GLabel 12950 4750 2    60   Input ~ 0
+Text GLabel 12950 4750 2    60   Output ~ 0
 FSMC_D11
-Text GLabel 12950 4850 2    60   Input ~ 0
+Text GLabel 12950 4850 2    60   Output ~ 0
 FSMC_D12
 Wire Wire Line
 	2650 3750 2350 3750
@@ -476,7 +476,7 @@ Wire Wire Line
 	2350 4350 2650 4350
 Text GLabel 2350 3750 0    60   Input ~ 0
 OSC_IN
-Text GLabel 2350 4350 0    60   Input ~ 0
+Text GLabel 2350 4350 0    60   Output ~ 0
 OSC_OUT
 Wire Wire Line
 	2650 7150 1600 7150
@@ -524,6 +524,6 @@ Text GLabel 2350 3350 0    60   Input ~ 0
 Write
 Wire Wire Line
 	2650 3550 2350 3550
-Text GLabel 2350 3550 0    60   Input ~ 0
+Text GLabel 2350 3550 0    60   Output ~ 0
 NRST
 $EndSCHEMATC

@@ -83,7 +83,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -511,5 +511,11 @@ S 15100 5200 600  150
 U 589F74EA
 F0 "OSC" 79
 F1 "OSC.sch" 79
+$EndSheet
+$Sheet
+S 15050 5700 500  150 
+U 589F8488
+F0 "LED" 79
+F1 "LED.sch" 79
 $EndSheet
 $EndSCHEMATC

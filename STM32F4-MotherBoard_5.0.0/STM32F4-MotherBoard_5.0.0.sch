@@ -83,7 +83,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -506,4 +506,10 @@ F 3 "" H 1600 7750 50  0000 C CNN
 	1    1600 7750
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 15100 5200 600  150 
+U 589F74EA
+F0 "OSC" 79
+F1 "OSC.sch" 79
+$EndSheet
 $EndSCHEMATC

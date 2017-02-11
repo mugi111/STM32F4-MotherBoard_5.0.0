@@ -253,11 +253,11 @@ Wire Wire Line
 	6150 3200 6300 3200
 Text GLabel 6300 3100 2    60   Input ~ 0
 RS-232(PC)_TX
-Text GLabel 6300 3200 2    60   Input ~ 0
+Text GLabel 6300 3200 2    60   Output ~ 0
 RS-232(PC)_RX
 Text GLabel 6300 3000 2    60   Input ~ 0
 RS-232(Controller)_TX
-Text GLabel 6300 2900 2    60   Input ~ 0
+Text GLabel 6300 2900 2    60   Output ~ 0
 RS-232(Controller)_RX
 Wire Wire Line
 	2550 3500 7550 3500

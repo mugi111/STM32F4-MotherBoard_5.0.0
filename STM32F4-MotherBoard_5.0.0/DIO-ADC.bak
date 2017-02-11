@@ -104,21 +104,21 @@ F 3 "" H 5050 2000 50  0000 C CNN
 	1    5050 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4500 3100 0    60   Input ~ 0
+Text GLabel 4500 3100 0    60   BiDi ~ 0
 DIO0_0
-Text GLabel 4500 3200 0    60   Input ~ 0
+Text GLabel 4500 3200 0    60   BiDi ~ 0
 DIO0_2
-Text GLabel 4500 3300 0    60   Input ~ 0
+Text GLabel 4500 3300 0    60   BiDi ~ 0
 DIO0_4
-Text GLabel 4500 3400 0    60   Input ~ 0
+Text GLabel 4500 3400 0    60   BiDi ~ 0
 DIO0_6
-Text GLabel 5600 3400 2    60   Input ~ 0
+Text GLabel 5600 3400 2    60   BiDi ~ 0
 DIO0_7
-Text GLabel 5600 3300 2    60   Input ~ 0
+Text GLabel 5600 3300 2    60   BiDi ~ 0
 DIO0_5
-Text GLabel 5600 3200 2    60   Input ~ 0
+Text GLabel 5600 3200 2    60   BiDi ~ 0
 DIO0_3
-Text GLabel 5600 3100 2    60   Input ~ 0
+Text GLabel 5600 3100 2    60   BiDi ~ 0
 DIO0_1
 Wire Wire Line
 	5600 3400 5300 3400
@@ -177,21 +177,21 @@ F 3 "" H 7050 2000 50  0000 C CNN
 	1    7050 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 6500 3100 0    60   Input ~ 0
+Text GLabel 6500 3100 0    60   BiDi ~ 0
 DIO0_0
-Text GLabel 6500 3200 0    60   Input ~ 0
+Text GLabel 6500 3200 0    60   BiDi ~ 0
 DIO0_2
-Text GLabel 6500 3300 0    60   Input ~ 0
+Text GLabel 6500 3300 0    60   BiDi ~ 0
 DIO0_4
-Text GLabel 6500 3400 0    60   Input ~ 0
+Text GLabel 6500 3400 0    60   BiDi ~ 0
 DIO0_6
-Text GLabel 7600 3400 2    60   Input ~ 0
+Text GLabel 7600 3400 2    60   BiDi ~ 0
 DIO0_7
-Text GLabel 7600 3300 2    60   Input ~ 0
+Text GLabel 7600 3300 2    60   BiDi ~ 0
 DIO0_5
-Text GLabel 7600 3200 2    60   Input ~ 0
+Text GLabel 7600 3200 2    60   BiDi ~ 0
 DIO0_3
-Text GLabel 7600 3100 2    60   Input ~ 0
+Text GLabel 7600 3100 2    60   BiDi ~ 0
 DIO0_1
 Wire Wire Line
 	7600 3400 7300 3400
@@ -250,21 +250,21 @@ F 3 "" H 5050 3550 50  0000 C CNN
 	1    5050 4750
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 4650 0    60   Input ~ 0
+Text GLabel 3800 4650 0    60   Output ~ 0
 ADC0
-Text GLabel 3800 4750 0    60   Input ~ 0
+Text GLabel 3800 4750 0    60   Output ~ 0
 ADC2
-Text GLabel 3800 4850 0    60   Input ~ 0
+Text GLabel 3800 4850 0    60   Output ~ 0
 ADC4
-Text GLabel 3800 4950 0    60   Input ~ 0
+Text GLabel 3800 4950 0    60   Output ~ 0
 ADC6
-Text GLabel 6300 4950 2    60   Input ~ 0
+Text GLabel 6300 4950 2    60   Output ~ 0
 ADC7
-Text GLabel 6300 4850 2    60   Input ~ 0
+Text GLabel 6300 4850 2    60   Output ~ 0
 ADC5
-Text GLabel 6300 4750 2    60   Input ~ 0
+Text GLabel 6300 4750 2    60   Output ~ 0
 ADC3
-Text GLabel 6300 4650 2    60   Input ~ 0
+Text GLabel 6300 4650 2    60   Output ~ 0
 ADC1
 Wire Wire Line
 	4800 4550 4650 4550

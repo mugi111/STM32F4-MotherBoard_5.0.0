@@ -93,7 +93,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4100 2500 0    60   Input ~ 0
+Text GLabel 4100 2500 0    60   Output ~ 0
 OSC_IN
 Text GLabel 4100 3100 0    60   Input ~ 0
 OSC_OUT

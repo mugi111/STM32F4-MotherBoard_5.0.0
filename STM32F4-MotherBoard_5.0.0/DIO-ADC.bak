@@ -76,7 +76,9 @@ LIBS:ttl_ieee
 LIBS:video
 LIBS:Xicor
 LIBS:Zilog
-LIBS:STM32F4-MotherBoard_4.0.0-cache
+LIBS:STM32F4-MotherBoard_1.0.2-cache
+LIBS:STM32F4-MotherBoard_3.0.0-cache
+LIBS:STM32F4-MotherBoard_5.0.0-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

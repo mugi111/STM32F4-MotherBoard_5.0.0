@@ -1,4 +1,4 @@
-update=2017/02/08 13:57:44
+update=2017/02/11 23:43:42
 version=1
 last_client=kicad
 [pcbnew]
@@ -135,3 +135,6 @@ LibName103=C:/Program Files/KiCad/share/kicad/library/video
 LibName104=C:/Program Files/KiCad/share/kicad/library/Xicor
 LibName105=C:/Program Files/KiCad/share/kicad/library/xilinx
 LibName106=C:/Program Files/KiCad/share/kicad/library/Zilog
+LibName107=STM32F4-MotherBoard_1.0.2-cache
+LibName108=STM32F4-MotherBoard_3.0.0-cache
+LibName109=STM32F4-MotherBoard_5.0.0-cache

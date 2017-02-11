@@ -91,17 +91,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L STM32F407VG U?
-U 1 1 589AA55C
-P 8063 5478
-F 0 "U?" H 8063 5478 50  0000 C CNN
-F 1 "STM32F407VG" H 8063 5578 50  0000 C CNN
-F 2 "TQFP100" H 8063 5378 50  0000 C CNN
-F 3 "" H 8063 5478 50  0000 C CNN
-	1    8063 5478
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 14857 1944 500  150 
 U 589AA5CF
@@ -144,4 +133,38 @@ U 589AA7A7
 F0 "ST-Link" 79
 F1 "ST-Link.sch" 79
 $EndSheet
+$Comp
+L STM32F407VG U?
+U 1 1 589AAFA6
+P 7650 5850
+F 0 "U?" H 7650 5850 50  0000 C CNN
+F 1 "STM32F407VG" H 7650 5950 50  0000 C CNN
+F 2 "TQFP100" H 7650 5750 50  0000 C CNN
+F 3 "" H 7650 5850 50  0000 C CNN
+	1    7650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2850 8350 2800
+Wire Wire Line
+	8350 2800 6850 2800
+Wire Wire Line
+	6850 2550 6850 2850
+Wire Wire Line
+	7150 2850 7150 2800
+Connection ~ 7150 2800
+Wire Wire Line
+	7450 2850 7450 2800
+Connection ~ 7450 2800
+Wire Wire Line
+	7750 2850 7750 2800
+Connection ~ 7750 2800
+Wire Wire Line
+	8050 2850 8050 2800
+Connection ~ 8050 2800
+Wire Wire Line
+	6850 2550 7000 2550
+Connection ~ 6850 2800
+Text GLabel 7000 2550 2    60   Input ~ 0
+power
 $EndSCHEMATC

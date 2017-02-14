@@ -83,7 +83,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -731,4 +731,16 @@ F 3 "" H 8600 2800 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	8600 2800 8600 2750
+Text GLabel 2350 8250 0    60   Output ~ 0
+SPI_SCK
+Text GLabel 2350 8350 0    60   Input ~ 0
+SPI_MISO
+Text GLabel 2350 8450 0    60   Output ~ 0
+SPI_MOSI
+$Sheet
+S 15100 6150 500  150 
+U 58A2FD89
+F0 "SD" 79
+F1 "SD.sch" 79
+$EndSheet
 $EndSCHEMATC

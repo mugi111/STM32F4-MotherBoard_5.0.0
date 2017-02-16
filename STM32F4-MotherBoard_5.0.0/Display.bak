@@ -133,8 +133,6 @@ Wire Wire Line
 Connection ~ 4850 3050
 Wire Wire Line
 	6300 4750 6350 4750
-Wire Wire Line
-	6350 3350 6350 5150
 $Comp
 L R R?
 U 1 1 589F424B
@@ -247,9 +245,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 3950 6450 3950
 Wire Wire Line
-	6300 3350 6350 3350
-Connection ~ 6350 4750
-Wire Wire Line
 	6300 3450 7050 3450
 Wire Wire Line
 	7050 3450 7050 3600
@@ -330,4 +325,10 @@ Text GLabel 4750 3450 0    60   Input ~ 0
 RS
 Text GLabel 4750 3350 0    60   Input ~ 0
 CS
+Wire Wire Line
+	6350 4750 6350 5150
+Text GLabel 6450 3350 2    60   Input ~ 0
+RST
+Wire Wire Line
+	6450 3350 6300 3350
 $EndSCHEMATC

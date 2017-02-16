@@ -117,9 +117,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 3350 5300 3350
 Wire Wire Line
-	5300 2950 5200 2950
-Wire Wire Line
-	5200 2950 5200 3800
+	4650 2950 5300 2950
 $Comp
 L GND #PWR?
 U 1 1 58A2FE1C
@@ -133,7 +131,6 @@ F 3 "" H 5200 3800 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	5300 3150 5200 3150
-Connection ~ 5200 3150
 $Comp
 L +3.3V #PWR?
 U 1 1 58A2FE3B
@@ -174,4 +171,12 @@ F 3 "" H 7150 3800 50  0000 C CNN
 	1    7150 3800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5200 3150 5200 3800
+Wire Wire Line
+	4650 2950 4650 2850
+Wire Wire Line
+	4650 2850 4350 2850
+Text GLabel 4350 2850 0    60   Input ~ 0
+SPI_CS
 $EndSCHEMATC

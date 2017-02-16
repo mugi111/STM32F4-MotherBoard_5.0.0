@@ -247,7 +247,6 @@ Text GLabel 12950 8150 2    60   Input ~ 0
 RotarySW1
 Text GLabel 12950 8050 2    60   BiDi ~ 0
 DIO1_2
-NoConn ~ 12650 8250
 NoConn ~ 12650 8350
 NoConn ~ 12650 8450
 Wire Wire Line
@@ -743,4 +742,8 @@ U 58A2FD89
 F0 "SD" 79
 F1 "SD.sch" 79
 $EndSheet
+Wire Wire Line
+	12650 8250 12950 8250
+Text GLabel 12950 8250 2    60   Output ~ 0
+SPI_CS
 $EndSCHEMATC

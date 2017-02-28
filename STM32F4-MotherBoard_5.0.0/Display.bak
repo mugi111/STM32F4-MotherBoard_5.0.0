@@ -212,8 +212,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 3950 4750 3950
 Wire Wire Line
-	4750 4050 4900 4050
-Wire Wire Line
 	4900 4150 4750 4150
 Wire Wire Line
 	4750 4250 4900 4250
@@ -278,58 +276,60 @@ F 3 "" H 7050 4050 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7050 4050 7050 3900
-Text GLabel 6450 3750 2    60   Input ~ 0
-XL
-Text GLabel 6450 3650 2    60   Input ~ 0
-YB
-Text GLabel 6450 3950 2    60   Input ~ 0
-XR
-Text GLabel 6450 3850 2    60   Input ~ 0
-YT
-Text GLabel 4750 4150 0    60   Input ~ 0
-FSMC_D4
-Text GLabel 4750 4250 0    60   Input ~ 0
-FSMC_D5
-Text GLabel 4750 4350 0    60   Input ~ 0
-FSMC_D6
-Text GLabel 4750 4450 0    60   Input ~ 0
-FSMC_D7
-Text GLabel 4750 4650 0    60   Input ~ 0
-FSMC_D9
-Text GLabel 4750 4550 0    60   Input ~ 0
-FSMC_D8
-Text GLabel 4750 4750 0    60   Input ~ 0
-FSMC_D10
-Text GLabel 4750 4850 0    60   Input ~ 0
-FSMC_D11
-Text GLabel 6450 2950 2    60   Input ~ 0
-FSMC_D12
-Text GLabel 6450 3050 2    60   Input ~ 0
-FSMC_D13
-Text GLabel 6450 3150 2    60   Input ~ 0
-FSMC_D14
-Text GLabel 6450 3250 2    60   Input ~ 0
-FSMC_D15
-Text GLabel 4750 3950 0    60   Input ~ 0
-FSMC_D2
-Text GLabel 4750 4050 0    60   Input ~ 0
-FSMC_D3
-Text GLabel 4750 3750 0    60   Input ~ 0
-FSMC_D0
-Text GLabel 4750 3850 0    60   Input ~ 0
-FSMC_D1
-Text GLabel 4750 3650 0    60   Input ~ 0
-RD
-Text GLabel 4750 3550 0    60   Input ~ 0
-WR
-Text GLabel 4750 3450 0    60   Input ~ 0
-RS
-Text GLabel 4750 3350 0    60   Input ~ 0
-CS
 Wire Wire Line
 	6350 4750 6350 5150
-Text GLabel 6450 3350 2    60   Input ~ 0
-RST
 Wire Wire Line
 	6450 3350 6300 3350
+Text GLabel 6450 3350 2    60   Input ~ 0
+RST
+Text GLabel 6450 3850 2    60   Input ~ 0
+YT
+Text GLabel 6450 3950 2    60   Input ~ 0
+XR
+Text GLabel 6450 3650 2    60   Input ~ 0
+YB
+Text GLabel 6450 3750 2    60   Input ~ 0
+XL
+Text GLabel 4750 3350 0    60   Input ~ 0
+CS
+Text GLabel 4750 3450 0    60   Input ~ 0
+RS
+Text GLabel 4750 3550 0    60   Input ~ 0
+WR
+Text GLabel 4750 3650 0    60   Input ~ 0
+RD
+Text GLabel 6450 3250 2    60   Input ~ 0
+FSMC_D15
+Text GLabel 6450 3150 2    60   Input ~ 0
+FSMC_D14
+Text GLabel 6450 3050 2    60   Input ~ 0
+FSMC_D13
+Text GLabel 6450 2950 2    60   Input ~ 0
+FSMC_D12
+Text GLabel 4750 3850 0    60   Input ~ 0
+FSMC_D1
+Text GLabel 4750 3750 0    60   Input ~ 0
+FSMC_D0
+Text GLabel 4750 3950 0    60   Input ~ 0
+FSMC_D2
+Text GLabel 4750 4850 0    60   Input ~ 0
+FSMC_D11
+Text GLabel 4750 4750 0    60   Input ~ 0
+FSMC_D10
+Text GLabel 4750 4550 0    60   Input ~ 0
+FSMC_D8
+Text GLabel 4750 4650 0    60   Input ~ 0
+FSMC_D9
+Text GLabel 4750 4450 0    60   Input ~ 0
+FSMC_D7
+Text GLabel 4750 4350 0    60   Input ~ 0
+FSMC_D6
+Text GLabel 4750 4250 0    60   Input ~ 0
+FSMC_D5
+Text GLabel 4750 4150 0    60   Input ~ 0
+FSMC_D4
+Text GLabel 4750 4050 0    60   Input ~ 0
+FSMC_D3
+Wire Wire Line
+	4750 4050 4900 4050
 $EndSCHEMATC

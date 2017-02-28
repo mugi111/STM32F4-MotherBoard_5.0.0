@@ -147,25 +147,6 @@ F 3 "" H 7650 5850 50  0000 C CNN
 	1    7650 5850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8350 2850 8350 2800
-Wire Wire Line
-	8350 2800 6850 2800
-Wire Wire Line
-	6850 2550 6850 2850
-Wire Wire Line
-	7150 2850 7150 2800
-Connection ~ 7150 2800
-Wire Wire Line
-	7450 2850 7450 2800
-Connection ~ 7450 2800
-Wire Wire Line
-	7750 2850 7750 2800
-Connection ~ 7750 2800
-Wire Wire Line
-	8050 2850 8050 2800
-Connection ~ 8050 2800
-Connection ~ 6850 2800
 Text GLabel 2350 5150 0    60   Input ~ 0
 ENC0_Z
 Text GLabel 2350 5250 0    60   Input ~ 0
@@ -250,6 +231,305 @@ Text GLabel 12950 8050 2    60   BiDi ~ 0
 DIO1_2
 NoConn ~ 12650 8350
 NoConn ~ 12650 8450
+Text GLabel 12950 5350 2    60   BiDi ~ 0
+DIO1_5
+Text GLabel 12950 5450 2    60   Input ~ 0
+RST
+Text GLabel 12950 5750 2    60   BiDi ~ 0
+DIO1_7
+Text GLabel 12950 6350 2    60   Input ~ 0
+ENC1_A
+Text GLabel 12950 6450 2    60   Input ~ 0
+ENC1_B
+Text GLabel 12950 3350 2    60   Input ~ 0
+RotarySW2
+Text GLabel 12950 3450 2    60   Input ~ 0
+RotarySW3
+Text GLabel 12950 3550 2    60   BiDi ~ 0
+DIO1_3
+Text GLabel 12950 3650 2    60   BiDi ~ 0
+DIO1_4
+Text GLabel 12950 3750 2    60   Input ~ 0
+ENC2_Z
+Text GLabel 12950 3850 2    60   Input ~ 0
+ENC2_A
+Text GLabel 12950 3950 2    60   Input ~ 0
+ENC2_B
+Text GLabel 2350 3750 0    60   Input ~ 0
+OSC_IN
+Text GLabel 2350 4350 0    60   Output ~ 0
+OSC_OUT
+$Comp
+L R R1
+U 1 1 589F1F0A
+P 1600 7500
+F 0 "R1" V 1680 7500 50  0000 C CNN
+F 1 "100k" V 1600 7500 50  0000 C CNN
+F 2 "robocon_pcb:SM0603_EXP0.5mm" V 1530 7500 50  0001 C CNN
+F 3 "" H 1600 7500 50  0000 C CNN
+	1    1600 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 589F1F9C
+P 1600 7750
+F 0 "#PWR01" H 1600 7500 50  0001 C CNN
+F 1 "GND" H 1600 7600 50  0000 C CNN
+F 2 "" H 1600 7750 50  0000 C CNN
+F 3 "" H 1600 7750 50  0000 C CNN
+	1    1600 7750
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 15100 5200 600  150 
+U 589F74EA
+F0 "OSC" 79
+F1 "OSC.sch" 79
+$EndSheet
+$Sheet
+S 15050 5700 500  150 
+U 589F8488
+F0 "LED" 79
+F1 "LED.sch" 79
+$EndSheet
+Text GLabel 2350 3350 0    60   Input ~ 0
+Write
+Text GLabel 2350 3550 0    60   Output ~ 0
+NRST
+$Comp
+L C C3
+U 1 1 589FAA7C
+P 8550 9050
+F 0 "C3" H 8575 9150 50  0000 L CNN
+F 1 "2.2uF" H 8575 8950 50  0000 L CNN
+F 2 "robocon_pcb:SM0805_EXP0.5mm" H 8588 8900 50  0001 C CNN
+F 3 "" H 8550 9050 50  0000 C CNN
+	1    8550 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 589FAAA6
+P 9050 9050
+F 0 "C5" H 9075 9150 50  0000 L CNN
+F 1 "2.2uF" H 9075 8950 50  0000 L CNN
+F 2 "robocon_pcb:SM0805_EXP0.5mm" H 9088 8900 50  0001 C CNN
+F 3 "" H 9050 9050 50  0000 C CNN
+	1    9050 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 589FACC4
+P 8800 9350
+F 0 "#PWR02" H 8800 9100 50  0001 C CNN
+F 1 "GND" H 8800 9200 50  0000 C CNN
+F 2 "" H 8800 9350 50  0000 C CNN
+F 3 "" H 8800 9350 50  0000 C CNN
+	1    8800 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 589FACE2
+P 7650 9150
+F 0 "#PWR03" H 7650 8900 50  0001 C CNN
+F 1 "GND" H 7650 9000 50  0000 C CNN
+F 2 "" H 7650 9150 50  0000 C CNN
+F 3 "" H 7650 9150 50  0000 C CNN
+	1    7650 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 589FAD4B
+P 5350 2150
+F 0 "#PWR04" H 5350 2000 50  0001 C CNN
+F 1 "+3.3V" H 5350 2290 50  0000 C CNN
+F 2 "" H 5350 2150 50  0000 C CNN
+F 3 "" H 5350 2150 50  0000 C CNN
+	1    5350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 589FAD69
+P 5850 2150
+F 0 "#PWR05" H 5850 2000 50  0001 C CNN
+F 1 "+3.3V" H 5850 2290 50  0000 C CNN
+F 2 "" H 5850 2150 50  0000 C CNN
+F 3 "" H 5850 2150 50  0000 C CNN
+	1    5850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 589FAEE5
+P 5050 2600
+F 0 "C1" H 5075 2700 50  0000 L CNN
+F 1 "0.1uF" H 5075 2500 50  0000 L CNN
+F 2 "robocon_pcb:SM0805_EXP0.5mm" H 5088 2450 50  0001 C CNN
+F 3 "" H 5050 2600 50  0000 C CNN
+	1    5050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 589FAF86
+P 5600 2600
+F 0 "C2" H 5625 2700 50  0000 L CNN
+F 1 "0.1uF" H 5625 2500 50  0000 L CNN
+F 2 "robocon_pcb:SM0805_EXP0.5mm" H 5638 2450 50  0001 C CNN
+F 3 "" H 5600 2600 50  0000 C CNN
+	1    5600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 589FB0D0
+P 5600 2800
+F 0 "#PWR06" H 5600 2550 50  0001 C CNN
+F 1 "GND" H 5600 2650 50  0000 C CNN
+F 2 "" H 5600 2800 50  0000 C CNN
+F 3 "" H 5600 2800 50  0000 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 589FB0F4
+P 5050 2800
+F 0 "#PWR07" H 5050 2550 50  0001 C CNN
+F 1 "GND" H 5050 2650 50  0000 C CNN
+F 2 "" H 5050 2800 50  0000 C CNN
+F 3 "" H 5050 2800 50  0000 C CNN
+	1    5050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR08
+U 1 1 589FB171
+P 6850 2550
+F 0 "#PWR08" H 6850 2400 50  0001 C CNN
+F 1 "+3.3V" H 6850 2690 50  0000 C CNN
+F 2 "" H 6850 2550 50  0000 C CNN
+F 3 "" H 6850 2550 50  0000 C CNN
+	1    6850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR09
+U 1 1 589FB1D7
+P 8850 2150
+F 0 "#PWR09" H 8850 2000 50  0001 C CNN
+F 1 "+3.3V" H 8850 2290 50  0000 C CNN
+F 2 "" H 8850 2150 50  0000 C CNN
+F 3 "" H 8850 2150 50  0000 C CNN
+	1    8850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 589FB1E1
+P 8600 2600
+F 0 "C4" H 8625 2700 50  0000 L CNN
+F 1 "0.1uF" H 8625 2500 50  0000 L CNN
+F 2 "robocon_pcb:SM0805_EXP0.5mm" H 8638 2450 50  0001 C CNN
+F 3 "" H 8600 2600 50  0000 C CNN
+	1    8600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 589FB1F9
+P 8600 2800
+F 0 "#PWR010" H 8600 2550 50  0001 C CNN
+F 1 "GND" H 8600 2650 50  0000 C CNN
+F 2 "" H 8600 2800 50  0000 C CNN
+F 3 "" H 8600 2800 50  0000 C CNN
+	1    8600 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 2350 8250 0    60   Output ~ 0
+SPI_SCK
+Text GLabel 2350 8350 0    60   Input ~ 0
+SPI_MISO
+Text GLabel 2350 8450 0    60   Output ~ 0
+SPI_MOSI
+$Sheet
+S 15100 6150 500  150 
+U 58A2FD89
+F0 "SD" 79
+F1 "SD.sch" 79
+$EndSheet
+Text GLabel 12950 8250 2    60   Output ~ 0
+SPI_CS
+$Sheet
+S 15150 6600 500  150 
+U 58A5790E
+F0 "ENC" 79
+F1 "ENC.sch" 79
+$EndSheet
+Text GLabel 12950 5550 2    60   Output ~ 0
+RD
+Text GLabel 12950 5650 2    60   Output ~ 0
+WR
+Text GLabel 12950 6250 2    60   Output ~ 0
+RS
+Text GLabel 12950 5850 2    60   Output ~ 0
+CS
+Text GLabel 12950 6650 2    60   Output ~ 0
+FSMC_D1
+Text GLabel 12950 6550 2    60   Output ~ 0
+FSMC_D0
+Text GLabel 12950 6150 2    60   Output ~ 0
+FSMC_D15
+Text GLabel 12950 6050 2    60   Output ~ 0
+FSMC_D14
+Text GLabel 12950 5950 2    60   Output ~ 0
+FSMC_D13
+Text GLabel 12950 5250 2    60   Output ~ 0
+FSMC_D3
+Text GLabel 12950 5150 2    60   Output ~ 0
+FSMC_D2
+Text GLabel 12950 4850 2    60   Output ~ 0
+FSMC_D12
+Text GLabel 12950 4750 2    60   Output ~ 0
+FSMC_D11
+Text GLabel 12950 4650 2    60   Output ~ 0
+FSMC_D10
+Text GLabel 12950 4550 2    60   Output ~ 0
+FSMC_D9
+Text GLabel 12950 4450 2    60   Output ~ 0
+FSMC_D8
+Text GLabel 12950 4350 2    60   Output ~ 0
+FSMC_D7
+Text GLabel 12950 4250 2    60   Output ~ 0
+FSMC_D6
+Text GLabel 12950 4150 2    60   Output ~ 0
+FSMC_D5
+Text GLabel 12950 4050 2    60   Output ~ 0
+FSMC_D4
+Wire Wire Line
+	8350 2850 8350 2800
+Wire Wire Line
+	8350 2800 6850 2800
+Wire Wire Line
+	6850 2550 6850 2850
+Wire Wire Line
+	7150 2850 7150 2800
+Connection ~ 7150 2800
+Wire Wire Line
+	7450 2850 7450 2800
+Connection ~ 7450 2800
+Wire Wire Line
+	7750 2850 7750 2800
+Connection ~ 7750 2800
+Wire Wire Line
+	8050 2850 8050 2800
+Connection ~ 8050 2800
+Connection ~ 6850 2800
 Wire Wire Line
 	12950 6950 12650 6950
 Wire Wire Line
@@ -370,38 +650,6 @@ Wire Wire Line
 	12950 6550 12650 6550
 Wire Wire Line
 	12650 6650 12950 6650
-Text GLabel 12950 5150 2    60   Output ~ 0
-FSMC_D2
-Text GLabel 12950 5250 2    60   Output ~ 0
-FSMC_D3
-Text GLabel 12950 5350 2    60   BiDi ~ 0
-DIO1_5
-Text GLabel 12950 5450 2    60   Input ~ 0
-RST
-Text GLabel 12950 5550 2    60   Output ~ 0
-RD
-Text GLabel 12950 5650 2    60   Output ~ 0
-WR
-Text GLabel 12950 5750 2    60   BiDi ~ 0
-DIO1_7
-Text GLabel 12950 5850 2    60   Output ~ 0
-CS
-Text GLabel 12950 5950 2    60   Output ~ 0
-FSMC_D13
-Text GLabel 12950 6050 2    60   Output ~ 0
-FSMC_D14
-Text GLabel 12950 6150 2    60   Output ~ 0
-FSMC_D15
-Text GLabel 12950 6350 2    60   Input ~ 0
-ENC1_A
-Text GLabel 12950 6250 2    60   Output ~ 0
-RS
-Text GLabel 12950 6450 2    60   Input ~ 0
-ENC1_B
-Text GLabel 12950 6550 2    60   Output ~ 0
-FSMC_D0
-Text GLabel 12950 6650 2    60   Output ~ 0
-FSMC_D1
 Wire Wire Line
 	12650 3350 12950 3350
 Wire Wire Line
@@ -434,94 +682,20 @@ Wire Wire Line
 	12950 4750 12650 4750
 Wire Wire Line
 	12650 4850 12950 4850
-Text GLabel 12950 3350 2    60   Input ~ 0
-RotarySW2
-Text GLabel 12950 3450 2    60   Input ~ 0
-RotarySW3
-Text GLabel 12950 3550 2    60   BiDi ~ 0
-DIO1_3
-Text GLabel 12950 3650 2    60   BiDi ~ 0
-DIO1_4
-Text GLabel 12950 3750 2    60   Input ~ 0
-ENC2_Z
-Text GLabel 12950 3850 2    60   Input ~ 0
-ENC2_A
-Text GLabel 12950 3950 2    60   Input ~ 0
-ENC2_B
-Text GLabel 12950 4050 2    60   Output ~ 0
-FSMC_D4
-Text GLabel 12950 4150 2    60   Output ~ 0
-FSMC_D5
-Text GLabel 12950 4250 2    60   Output ~ 0
-FSMC_D6
-Text GLabel 12950 4350 2    60   Output ~ 0
-FSMC_D7
-Text GLabel 12950 4550 2    60   Output ~ 0
-FSMC_D9
-Text GLabel 12950 4450 2    60   Output ~ 0
-FSMC_D8
-Text GLabel 12950 4650 2    60   Output ~ 0
-FSMC_D10
-Text GLabel 12950 4750 2    60   Output ~ 0
-FSMC_D11
-Text GLabel 12950 4850 2    60   Output ~ 0
-FSMC_D12
 Wire Wire Line
 	2650 3750 2350 3750
 Wire Wire Line
 	2350 4350 2650 4350
-Text GLabel 2350 3750 0    60   Input ~ 0
-OSC_IN
-Text GLabel 2350 4350 0    60   Output ~ 0
-OSC_OUT
 Wire Wire Line
 	2650 7150 1600 7150
 Wire Wire Line
 	1600 7150 1600 7350
-$Comp
-L R R1
-U 1 1 589F1F0A
-P 1600 7500
-F 0 "R1" V 1680 7500 50  0000 C CNN
-F 1 "100k" V 1600 7500 50  0000 C CNN
-F 2 "robocon_pcb:SM0603_EXP0.5mm" V 1530 7500 50  0001 C CNN
-F 3 "" H 1600 7500 50  0000 C CNN
-	1    1600 7500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 7650 1600 7750
-$Comp
-L GND #PWR01
-U 1 1 589F1F9C
-P 1600 7750
-F 0 "#PWR01" H 1600 7500 50  0001 C CNN
-F 1 "GND" H 1600 7600 50  0000 C CNN
-F 2 "" H 1600 7750 50  0000 C CNN
-F 3 "" H 1600 7750 50  0000 C CNN
-	1    1600 7750
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 15100 5200 600  150 
-U 589F74EA
-F0 "OSC" 79
-F1 "OSC.sch" 79
-$EndSheet
-$Sheet
-S 15050 5700 500  150 
-U 589F8488
-F0 "LED" 79
-F1 "LED.sch" 79
-$EndSheet
 Wire Wire Line
 	2650 3350 2350 3350
-Text GLabel 2350 3350 0    60   Input ~ 0
-Write
 Wire Wire Line
 	2650 3550 2350 3550
-Text GLabel 2350 3550 0    60   Output ~ 0
-NRST
 Wire Wire Line
 	7250 8850 7250 8950
 Wire Wire Line
@@ -537,28 +711,6 @@ Connection ~ 7650 8950
 Wire Wire Line
 	7450 8850 7450 8950
 Connection ~ 7450 8950
-$Comp
-L C C3
-U 1 1 589FAA7C
-P 8550 9050
-F 0 "C3" H 8575 9150 50  0000 L CNN
-F 1 "2.2uF" H 8575 8950 50  0000 L CNN
-F 2 "robocon_pcb:SM0805_EXP0.5mm" H 8588 8900 50  0001 C CNN
-F 3 "" H 8550 9050 50  0000 C CNN
-	1    8550 9050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C5
-U 1 1 589FAAA6
-P 9050 9050
-F 0 "C5" H 9075 9150 50  0000 L CNN
-F 1 "2.2uF" H 9075 8950 50  0000 L CNN
-F 2 "robocon_pcb:SM0805_EXP0.5mm" H 9088 8900 50  0001 C CNN
-F 3 "" H 9050 9050 50  0000 C CNN
-	1    9050 9050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9050 8850 9050 8900
 Wire Wire Line
@@ -572,50 +724,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 9250 8800 9350
 Connection ~ 8800 9250
-$Comp
-L GND #PWR02
-U 1 1 589FACC4
-P 8800 9350
-F 0 "#PWR02" H 8800 9100 50  0001 C CNN
-F 1 "GND" H 8800 9200 50  0000 C CNN
-F 2 "" H 8800 9350 50  0000 C CNN
-F 3 "" H 8800 9350 50  0000 C CNN
-	1    8800 9350
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 589FACE2
-P 7650 9150
-F 0 "#PWR03" H 7650 8900 50  0001 C CNN
-F 1 "GND" H 7650 9000 50  0000 C CNN
-F 2 "" H 7650 9150 50  0000 C CNN
-F 3 "" H 7650 9150 50  0000 C CNN
-	1    7650 9150
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR04
-U 1 1 589FAD4B
-P 5350 2150
-F 0 "#PWR04" H 5350 2000 50  0001 C CNN
-F 1 "+3.3V" H 5350 2290 50  0000 C CNN
-F 2 "" H 5350 2150 50  0000 C CNN
-F 3 "" H 5350 2150 50  0000 C CNN
-	1    5350 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR05
-U 1 1 589FAD69
-P 5850 2150
-F 0 "#PWR05" H 5850 2000 50  0001 C CNN
-F 1 "+3.3V" H 5850 2290 50  0000 C CNN
-F 2 "" H 5850 2150 50  0000 C CNN
-F 3 "" H 5850 2150 50  0000 C CNN
-	1    5850 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 2150 5850 2850
 Wire Wire Line
@@ -625,81 +733,15 @@ Wire Wire Line
 Wire Wire Line
 	5050 2350 5050 2450
 Connection ~ 5350 2350
-$Comp
-L C C1
-U 1 1 589FAEE5
-P 5050 2600
-F 0 "C1" H 5075 2700 50  0000 L CNN
-F 1 "0.1uF" H 5075 2500 50  0000 L CNN
-F 2 "robocon_pcb:SM0805_EXP0.5mm" H 5088 2450 50  0001 C CNN
-F 3 "" H 5050 2600 50  0000 C CNN
-	1    5050 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 2350 5600 2350
 Wire Wire Line
 	5600 2350 5600 2450
 Connection ~ 5850 2350
-$Comp
-L C C2
-U 1 1 589FAF86
-P 5600 2600
-F 0 "C2" H 5625 2700 50  0000 L CNN
-F 1 "0.1uF" H 5625 2500 50  0000 L CNN
-F 2 "robocon_pcb:SM0805_EXP0.5mm" H 5638 2450 50  0001 C CNN
-F 3 "" H 5600 2600 50  0000 C CNN
-	1    5600 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 2750 5050 2800
 Wire Wire Line
 	5600 2750 5600 2800
-$Comp
-L GND #PWR06
-U 1 1 589FB0D0
-P 5600 2800
-F 0 "#PWR06" H 5600 2550 50  0001 C CNN
-F 1 "GND" H 5600 2650 50  0000 C CNN
-F 2 "" H 5600 2800 50  0000 C CNN
-F 3 "" H 5600 2800 50  0000 C CNN
-	1    5600 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR07
-U 1 1 589FB0F4
-P 5050 2800
-F 0 "#PWR07" H 5050 2550 50  0001 C CNN
-F 1 "GND" H 5050 2650 50  0000 C CNN
-F 2 "" H 5050 2800 50  0000 C CNN
-F 3 "" H 5050 2800 50  0000 C CNN
-	1    5050 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR08
-U 1 1 589FB171
-P 6850 2550
-F 0 "#PWR08" H 6850 2400 50  0001 C CNN
-F 1 "+3.3V" H 6850 2690 50  0000 C CNN
-F 2 "" H 6850 2550 50  0000 C CNN
-F 3 "" H 6850 2550 50  0000 C CNN
-	1    6850 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR09
-U 1 1 589FB1D7
-P 8850 2150
-F 0 "#PWR09" H 8850 2000 50  0001 C CNN
-F 1 "+3.3V" H 8850 2290 50  0000 C CNN
-F 2 "" H 8850 2150 50  0000 C CNN
-F 3 "" H 8850 2150 50  0000 C CNN
-	1    8850 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8850 2150 8850 2850
 Wire Wire Line
@@ -707,50 +749,8 @@ Wire Wire Line
 Wire Wire Line
 	8600 2350 8600 2450
 Connection ~ 8850 2350
-$Comp
-L C C4
-U 1 1 589FB1E1
-P 8600 2600
-F 0 "C4" H 8625 2700 50  0000 L CNN
-F 1 "0.1uF" H 8625 2500 50  0000 L CNN
-F 2 "robocon_pcb:SM0805_EXP0.5mm" H 8638 2450 50  0001 C CNN
-F 3 "" H 8600 2600 50  0000 C CNN
-	1    8600 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR010
-U 1 1 589FB1F9
-P 8600 2800
-F 0 "#PWR010" H 8600 2550 50  0001 C CNN
-F 1 "GND" H 8600 2650 50  0000 C CNN
-F 2 "" H 8600 2800 50  0000 C CNN
-F 3 "" H 8600 2800 50  0000 C CNN
-	1    8600 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8600 2800 8600 2750
-Text GLabel 2350 8250 0    60   Output ~ 0
-SPI_SCK
-Text GLabel 2350 8350 0    60   Input ~ 0
-SPI_MISO
-Text GLabel 2350 8450 0    60   Output ~ 0
-SPI_MOSI
-$Sheet
-S 15100 6150 500  150 
-U 58A2FD89
-F0 "SD" 79
-F1 "SD.sch" 79
-$EndSheet
 Wire Wire Line
 	12650 8250 12950 8250
-Text GLabel 12950 8250 2    60   Output ~ 0
-SPI_CS
-$Sheet
-S 15150 6600 500  150 
-U 58A5790E
-F0 "ENC" 79
-F1 "ENC.sch" 79
-$EndSheet
 $EndSCHEMATC

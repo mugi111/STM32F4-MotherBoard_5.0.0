@@ -30,7 +30,7 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
         </MemoryAreas>
-        <LocateLinkFile path="link.ld" type="0"/>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/rcsemistm32f4_ver400/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -78,10 +78,10 @@
     <File name="lib/STemWin/inc/CHOOSEFILE.h" path="lib/STemWin/inc/CHOOSEFILE.h" type="1"/>
     <File name="lib/rcsemi/src/motherboard.c" path="lib/rcsemi/src/motherboard.c" type="1"/>
     <File name="lib/STemWin/inc/SLIDER.h" path="lib/STemWin/inc/SLIDER.h" type="1"/>
-    <File name="example/readme.txt" path="example/readme.txt" type="1"/>
     <File name="lib/STemWin/inc/GUI_ARRAY.h" path="lib/STemWin/inc/GUI_ARRAY.h" type="1"/>
-    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c" type="1"/>
+    <File name="example/readme.txt" path="example/readme.txt" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h" type="1"/>
+    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/misc.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/misc.c" type="1"/>
     <File name="example/07_Terunet.c" path="example/07_Terunet.c" type="1"/>
@@ -110,8 +110,8 @@
     <File name="lib/STemWin/inc/GUI.h" path="lib/STemWin/inc/GUI.h" type="1"/>
     <File name="lib/STemWin/inc/SLIDER_Private.h" path="lib/STemWin/inc/SLIDER_Private.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/CMSIS/core_cmFunc.h" path="lib/STM32F4xx_StdFramework/CMSIS/core_cmFunc.h" type="1"/>
-    <File name="lib/STemWin/inc/SCROLLBAR.h" path="lib/STemWin/inc/SCROLLBAR.h" type="1"/>
     <File name="lib/rcsemi/inc/timer.h" path="lib/rcsemi/inc/timer.h" type="1"/>
+    <File name="lib/STemWin/inc/SCROLLBAR.h" path="lib/STemWin/inc/SCROLLBAR.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_can.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_can.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h" type="1"/>
     <File name="lib/STemWin/inc/WM.h" path="lib/STemWin/inc/WM.h" type="1"/>
@@ -127,14 +127,14 @@
     <File name="lib/STM32F4xx_StdFramework/Startup/stm32f4xx_Startup.c" path="lib/STM32F4xx_StdFramework/Startup/stm32f4xx_Startup.c" type="1"/>
     <File name="lib/rcsemi/src/motor.c" path="lib/rcsemi/src/motor.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_exti.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_exti.h" type="1"/>
-    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/stm32f4xx_StdPeriphLib.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/stm32f4xx_StdPeriphLib.h" type="1"/>
+    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c" type="1"/>
     <File name="lib/STemWin/inc/MULTIPAGE.h" path="lib/STemWin/inc/MULTIPAGE.h" type="1"/>
     <File name="lib/STemWin/Lib" path="" type="2"/>
     <File name="lib/STemWin/inc/WINDOW_Private.h" path="lib/STemWin/inc/WINDOW_Private.h" type="1"/>
     <File name="lib/STemWin/inc/LCD.h" path="lib/STemWin/inc/LCD.h" type="1"/>
-    <File name="lib/STemWin/inc/GUI_SetOrientationCX.h" path="lib/STemWin/inc/GUI_SetOrientationCX.h" type="1"/>
     <File name="lib/STemWin/inc/GUI_FontIntern.h" path="lib/STemWin/inc/GUI_FontIntern.h" type="1"/>
+    <File name="lib/STemWin/inc/GUI_SetOrientationCX.h" path="lib/STemWin/inc/GUI_SetOrientationCX.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c" type="1"/>
     <File name="lib/STemWin/inc/GUI_ARRAY_Private.h" path="lib/STemWin/inc/GUI_ARRAY_Private.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h" type="1"/>
@@ -148,8 +148,8 @@
     <File name="example" path="" type="2"/>
     <File name="lib/STemWin/inc/GUIDRV_Dist.h" path="lib/STemWin/inc/GUIDRV_Dist.h" type="1"/>
     <File name="lib/semihosting/sh_cmd.s" path="lib/semihosting/sh_cmd.s" type="1"/>
-    <File name="example/02_MotherBoard.c" path="example/02_MotherBoard.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/syscalls.c" path="lib/STM32F4xx_StdFramework/syscalls.c" type="1"/>
+    <File name="example/02_MotherBoard.c" path="example/02_MotherBoard.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c" type="1"/>
     <File name="lib/STemWin/inc/DROPDOWN.h" path="lib/STemWin/inc/DROPDOWN.h" type="1"/>
     <File name="lib/STemWin/inc/GUIDRV_DCache.h" path="lib/STemWin/inc/GUIDRV_DCache.h" type="1"/>
@@ -160,23 +160,23 @@
     <File name="lib/STemWin/Config/LCDConf_FlexColor_Template.c" path="lib/STemWin/Config/LCDConf_FlexColor_Template.c" type="1"/>
     <File name="lib/rcsemi/inc/pspad.h" path="lib/rcsemi/inc/pspad.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c" type="1"/>
-    <File name="lib/STemWin/inc/GUI_HOOK.h" path="lib/STemWin/inc/GUI_HOOK.h" type="1"/>
     <File name="tools/tools.c" path="tools/tools.c" type="1"/>
+    <File name="lib/STemWin/inc/GUI_HOOK.h" path="lib/STemWin/inc/GUI_HOOK.h" type="1"/>
     <File name="lib/STemWin/Config/GUIDRV_Template.c" path="lib/STemWin/Config/GUIDRV_Template.c" type="1"/>
-    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c" type="1"/>
     <File name="lib/STemWin/inc/TREEVIEW_Private.h" path="lib/STemWin/inc/TREEVIEW_Private.h" type="1"/>
+    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c" type="1"/>
     <File name="lib/STemWin/inc/GUI_Type.h" path="lib/STemWin/inc/GUI_Type.h" type="1"/>
     <File name="lib/STemWin/inc/FRAMEWIN_Private.h" path="lib/STemWin/inc/FRAMEWIN_Private.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rng.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rng.h" type="1"/>
     <File name="lib/STemWin/inc/WM_Intern.h" path="lib/STemWin/inc/WM_Intern.h" type="1"/>
     <File name="lib/STemWin/inc/GUIDRV_Lin_Opt_8.h" path="lib/STemWin/inc/GUIDRV_Lin_Opt_8.h" type="1"/>
     <File name="lib/STemWin/inc/LISTBOX_Private.h" path="lib/STemWin/inc/LISTBOX_Private.h" type="1"/>
-    <File name="lib/STemWin/inc/GUIDRV_Lin.h" path="lib/STemWin/inc/GUIDRV_Lin.h" type="1"/>
     <File name="tools/tools.h" path="tools/tools.h" type="1"/>
-    <File name="lib/STemWin/inc/RADIO_Private.h" path="lib/STemWin/inc/RADIO_Private.h" type="1"/>
+    <File name="lib/STemWin/inc/GUIDRV_Lin.h" path="lib/STemWin/inc/GUIDRV_Lin.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h" type="1"/>
-    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c" type="1"/>
+    <File name="lib/STemWin/inc/RADIO_Private.h" path="lib/STemWin/inc/RADIO_Private.h" type="1"/>
     <File name="lib/STemWin/Config/GUIDRV_Template.h" path="lib/STemWin/Config/GUIDRV_Template.h" type="1"/>
+    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c" type="1"/>
     <File name="example/example.h" path="example/example.h" type="1"/>
     <File name="lib/STemWin/inc/LCD_Protected.h" path="lib/STemWin/inc/LCD_Protected.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c" type="1"/>
@@ -195,13 +195,13 @@
     <File name="lib/STemWin/inc/GUI_Private.h" path="lib/STemWin/inc/GUI_Private.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c" type="1"/>
     <File name="lib/rcsemi/src/rotary_encoder.c" path="lib/rcsemi/src/rotary_encoder.c" type="1"/>
-    <File name="lib/STemWin/inc/PROGBAR.h" path="lib/STemWin/inc/PROGBAR.h" type="1"/>
     <File name="lib/STemWin/inc/LISTVIEW_Private.h" path="lib/STemWin/inc/LISTVIEW_Private.h" type="1"/>
+    <File name="lib/STemWin/inc/PROGBAR.h" path="lib/STemWin/inc/PROGBAR.h" type="1"/>
     <File name="lib/rcsemi/inc/motor.h" path="lib/rcsemi/inc/motor.h" type="1"/>
     <File name="lib/rcsemi/src" path="" type="2"/>
     <File name="lib/STemWin/inc/SCROLLBAR_Private.h" path="lib/STemWin/inc/SCROLLBAR_Private.h" type="1"/>
-    <File name="lib/STemWin/Config/GUIConf.c" path="lib/STemWin/Config/GUIConf.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h" type="1"/>
+    <File name="lib/STemWin/Config/GUIConf.c" path="lib/STemWin/Config/GUIConf.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver" path="" type="2"/>
     <File name="lib/STemWin/inc/IMAGE_Private.h" path="lib/STemWin/inc/IMAGE_Private.h" type="1"/>
@@ -214,13 +214,13 @@
     <File name="lib/semihosting/semihosting.c" path="lib/semihosting/semihosting.c" type="1"/>
     <File name="lib/STemWin/OS/GUI_X.c" path="lib/STemWin/OS/GUI_X.c" type="1"/>
     <File name="example/00_Model.c" path="example/00_Model.c" type="1"/>
-    <File name="lib/rcsemi/inc/terunet.h" path="lib/rcsemi/inc/terunet.h" type="1"/>
     <File name="lib/STemWin/inc/WM_GUI.h" path="lib/STemWin/inc/WM_GUI.h" type="1"/>
+    <File name="lib/rcsemi/inc/terunet.h" path="lib/rcsemi/inc/terunet.h" type="1"/>
     <File name="lib" path="" type="2"/>
     <File name="lib/STemWin/inc/GUI_BMP_Private.h" path="lib/STemWin/inc/GUI_BMP_Private.h" type="1"/>
     <File name="lib/rcsemi/inc/can.h" path="lib/rcsemi/inc/can.h" type="1"/>
-    <File name="lib/STemWin/inc/LISTWHEEL.h" path="lib/STemWin/inc/LISTWHEEL.h" type="1"/>
     <File name="lib/STemWin/inc/GUI_SetOrientation.h" path="lib/STemWin/inc/GUI_SetOrientation.h" type="1"/>
+    <File name="lib/STemWin/inc/LISTWHEEL.h" path="lib/STemWin/inc/LISTWHEEL.h" type="1"/>
     <File name="lib/STemWin/inc/GUI_GIF_Private.h" path="lib/STemWin/inc/GUI_GIF_Private.h" type="1"/>
     <File name="lib/STemWin/inc/FRAMEWIN.h" path="lib/STemWin/inc/FRAMEWIN.h" type="1"/>
     <File name="lib/STemWin/inc/GUI_VNC.h" path="lib/STemWin/inc/GUI_VNC.h" type="1"/>
@@ -237,8 +237,8 @@
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c" type="1"/>
-    <File name="lib/STemWin/inc/CHOOSECOLOR.h" path="lib/STemWin/inc/CHOOSECOLOR.h" type="1"/>
     <File name="lib/STemWin/inc/DIALOG_Intern.h" path="lib/STemWin/inc/DIALOG_Intern.h" type="1"/>
+    <File name="lib/STemWin/inc/CHOOSECOLOR.h" path="lib/STemWin/inc/CHOOSECOLOR.h" type="1"/>
     <File name="lib/STemWin/inc/PROGBAR_Private.h" path="lib/STemWin/inc/PROGBAR_Private.h" type="1"/>
     <File name="lib/semihosting/semihosting.h" path="lib/semihosting/semihosting.h" type="1"/>
     <File name="lib/STemWin/Lib/libSTemWin522_CM4_GCC.a" path="lib/STemWin/Lib/libSTemWin522_CM4_GCC.a" type="1"/>
@@ -250,8 +250,8 @@
     <File name="lib/rcsemi/src/usart.c" path="lib/rcsemi/src/usart.c" type="1"/>
     <File name="lib/STemWin/inc/GRAPH.h" path="lib/STemWin/inc/GRAPH.h" type="1"/>
     <File name="lib/rcsemi" path="" type="2"/>
-    <File name="lib/STemWin/inc/LCD_ConfDefaults.h" path="lib/STemWin/inc/LCD_ConfDefaults.h" type="1"/>
     <File name="lib/STemWin/inc/LISTWHEEL_Private.h" path="lib/STemWin/inc/LISTWHEEL_Private.h" type="1"/>
+    <File name="lib/STemWin/inc/LCD_ConfDefaults.h" path="lib/STemWin/inc/LCD_ConfDefaults.h" type="1"/>
     <File name="lib/STemWin/inc/MESSAGEBOX.h" path="lib/STemWin/inc/MESSAGEBOX.h" type="1"/>
     <File name="lib/STemWin/inc/SPINBOX_Private.h" path="lib/STemWin/inc/SPINBOX_Private.h" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h" type="1"/>
@@ -270,11 +270,11 @@
     <File name="lib/STemWin/inc/LCD_SIM.h" path="lib/STemWin/inc/LCD_SIM.h" type="1"/>
     <File name="lib/STemWin/Config" path="" type="2"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h" type="1"/>
-    <File name="lib/STemWin/inc/HEADER.h" path="lib/STemWin/inc/HEADER.h" type="1"/>
-    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc" path="" type="2"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c" type="1"/>
-    <File name="lib/STemWin/inc/BUTTON_Private.h" path="lib/STemWin/inc/BUTTON_Private.h" type="1"/>
+    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc" path="" type="2"/>
+    <File name="lib/STemWin/inc/HEADER.h" path="lib/STemWin/inc/HEADER.h" type="1"/>
     <File name="lib/STemWin/inc/SPINBOX.h" path="lib/STemWin/inc/SPINBOX.h" type="1"/>
+    <File name="lib/STemWin/inc/BUTTON_Private.h" path="lib/STemWin/inc/BUTTON_Private.h" type="1"/>
     <File name="lib/rcsemi/inc/usart.h" path="lib/rcsemi/inc/usart.h" type="1"/>
     <File name="lib/STemWin/OS" path="" type="2"/>
     <File name="lib/STemWin/inc/EDIT.h" path="lib/STemWin/inc/EDIT.h" type="1"/>
@@ -288,8 +288,8 @@
     <File name="lib/STemWin/inc/GUIDRV_Lin_Private.h" path="lib/STemWin/inc/GUIDRV_Lin_Private.h" type="1"/>
     <File name="lib/STemWin/inc/GUIDRV_Lin_Opt_32.h" path="lib/STemWin/inc/GUIDRV_Lin_Opt_32.h" type="1"/>
     <File name="lib/STemWin/inc/GUIDRV_FlexColor_Private.h" path="lib/STemWin/inc/GUIDRV_FlexColor_Private.h" type="1"/>
-    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c" type="1"/>
     <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h" type="1"/>
+    <File name="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c" path="lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c" type="1"/>
     <File name="lib/STemWin/inc/GUI_SPRITE_Private.h" path="lib/STemWin/inc/GUI_SPRITE_Private.h" type="1"/>
     <File name="lib/rcsemi/src/digitalIO.c" path="lib/rcsemi/src/digitalIO.c" type="1"/>
     <File name="lib/rcsemi/inc" path="" type="2"/>

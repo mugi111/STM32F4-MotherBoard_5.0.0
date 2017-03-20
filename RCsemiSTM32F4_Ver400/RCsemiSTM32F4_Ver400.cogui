@@ -36,9 +36,17 @@
 <viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/RCsemiSTM32F4_Ver400"/>
+<element path="/RCsemiSTM32F4_Ver400/lib"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc"/>
 </expanded>
 <selection>
-<element path="/RCsemiSTM32F4_Ver400"/>
+<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
 </selection>
 </viewState>
 </view>
@@ -109,7 +117,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.console.ConsoleView" ratio="0.69966996" ratioLeft="424" ratioRight="182" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d290f2"/>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.21962617" ratioLeft="141" ratioRight="501" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d290f2"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.17123796" ratioLeft="231" ratioRight="1118" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d290f2"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@16b302c" ratio="0.7185629" ratioLeft="360" ratioRight="141" relationship="2" relative="org.coocox.builder.ui.exampleView">
 <folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="Help"/>
@@ -245,10 +253,46 @@
 <editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
 <subPage/>
 </editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
+<org.coocox.welcome.ui.WelcomePage/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
+<org.coocox.welcome.ui.WelcomePage/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
+<org.coocox.welcome.ui.WelcomePage/>
+</editor>
 </editors>
 <item historyLabel="welcome" index="0"/>
 <item historyLabel="Repository" index="1"/>
-<item active="true" historyLabel="welcome" index="0"/>
+<item historyLabel="welcome" index="0"/>
+<item historyLabel="welcome" index="2"/>
+<item historyLabel="readme.txt" index="3">
+<position info="not_deleted" x="223" y="0"/>
+</item>
+<item historyLabel="welcome" index="2"/>
+<item historyLabel="welcome" index="4"/>
+<item historyLabel="digitalIO.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="digitalIO.c" index="6">
+<position info="not_deleted" x="547" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_gpio.h" index="7">
+<position info="not_deleted" x="3193" y="0"/>
+</item>
+<item historyLabel="digitalIO.c" index="6">
+<position info="not_deleted" x="547" y="0"/>
+</item>
+<item historyLabel="digitalIO.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="welcome" index="4"/>
+<item active="true" historyLabel="welcome" index="8"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -256,14 +300,20 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>
-<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
 </file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.c" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.h" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="readme.txt" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
 </persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="RCsemiSTM32F4_Ver400/main.c">
@@ -295,15 +345,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h">
 <persistable path="/RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" tooltip="RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c">
-<persistable path="/RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_exti.h" tooltip="ElectronicLock/cmsis_lib/include/stm32f0xx_exti.h">
-<persistable path="/ElectronicLock/cmsis_lib/include/stm32f0xx_exti.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_exti.c" tooltip="ElectronicLock/cmsis_lib/source/stm32f0xx_exti.c">
-<persistable path="/ElectronicLock/cmsis_lib/source/stm32f0xx_exti.c"/>
 </file>
 </mruList>
 </workbench>

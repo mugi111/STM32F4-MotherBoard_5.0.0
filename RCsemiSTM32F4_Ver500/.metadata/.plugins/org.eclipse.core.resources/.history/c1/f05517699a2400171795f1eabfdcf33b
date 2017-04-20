@@ -1,0 +1,32 @@
+#include "../inc/adc.h"
+#include <stm32f4xx.h>
+
+
+namespace RCsemi{
+
+adc::adc(ADC_MODE_Def mode)
+{
+	m_mode = mode;
+
+//	ADC_InitTypeDef ADC_InitStructure;
+//	ADC_InitStructure.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
+
+}
+
+uint16_t adc::Single_Read(uint8_t ch)
+{
+//	if	   (ch == 0)	HAL_ADC_GetValue();
+//	else if(ch == 1)	ADC_RegularChannelConfig(ADC1, ADC_Channel_3 , 1, ADC_SINGLECONV_CYCLE);
+//	else if(ch == 2)	ADC_RegularChannelConfig(ADC1, ADC_Channel_8 , 1, ADC_SINGLECONV_CYCLE);
+//	else if(ch == 3)	ADC_RegularChannelConfig(ADC1, ADC_Channel_9 , 1, ADC_SINGLECONV_CYCLE);
+//	else if(ch == 4)	ADC_RegularChannelConfig(ADC1, ADC_Channel_11, 1, ADC_SINGLECONV_CYCLE);
+//	else if(ch == 5)	ADC_RegularChannelConfig(ADC1, ADC_Channel_12, 1, ADC_SINGLECONV_CYCLE);
+//	else if(ch == 6)	ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 1, ADC_SINGLECONV_CYCLE);
+//	else if(ch == 7)	ADC_RegularChannelConfig(ADC1, ADC_Channel_15, 1, ADC_SINGLECONV_CYCLE);
+//	ADC_SoftwareStartConv(ADC1);
+//
+//	while(ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC) == RESET);
+	return 1;
+}
+
+}

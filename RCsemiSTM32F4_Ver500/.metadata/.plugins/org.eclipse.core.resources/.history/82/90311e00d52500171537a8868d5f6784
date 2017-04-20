@@ -15,7 +15,7 @@ extern int gSystemTimer_ms;
 namespace RCsemi{
 
 class timer{
-	static int m_timingDelay_ms;
+
 public:
 	void TIM7_CMT_Init();
 	void delay_ms(int msec);

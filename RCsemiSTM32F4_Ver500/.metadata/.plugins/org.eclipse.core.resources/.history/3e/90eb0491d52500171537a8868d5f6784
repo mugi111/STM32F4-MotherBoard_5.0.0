@@ -12,20 +12,16 @@
 
 namespace RCsemi{
 
-int gSystemTimer_ms = 0;
-
 void timer::TIM7_CMT_Init()
 {
 
 }
 
-void timer::delay_ms(int msec)
+void timer::delay_ms(int ms)
 {
-	m_timingDelay_ms = msec;
-	while(m_timingDelay_ms);
+
 }
 
-//systemClock‚âPWM‚Å‹¤—L‚µ‚Ä‚¢‚éTIM7‚Ì\¬‚ğl‚¦’¼‚·
 }
 
 

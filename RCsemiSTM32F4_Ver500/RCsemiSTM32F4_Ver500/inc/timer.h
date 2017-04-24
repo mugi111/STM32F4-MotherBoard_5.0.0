@@ -20,7 +20,8 @@ public:
 	void TIM7_CMT_Init();
 	void delay_ms(int msec);
 };
-}
+
+} /* namespace timer */
 
 
 #endif /* TIMER_H_ */

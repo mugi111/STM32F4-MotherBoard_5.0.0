@@ -1,0 +1,42 @@
+/*
+ * motor.h
+ *
+ *  Created on: 2017/04/24
+ *      Author: mugi111
+ */
+
+#ifndef MOTOR_H_
+#define MOTOR_H_
+
+namespace RCsemi{
+
+class Motor{
+	Motor(uint16_t Enable_bits);
+	
+public:
+    /*
+        デューティー比dutyでモーターをドライブする
+        返り値は実際に設定された値
+    */
+	virtual int drive(int duty)  = 0;
+
+    /*
+        モーターにブレーキをかける.
+        返り値がtrueの時は成功.
+    */
+	virtual bool brake()          = 0;
+
+    /*
+        現在のデューティー比を返す
+    */
+	virtual int getCurrentDuty() = 0;
+
+
+	virtual ~Motor()             {};
+};
+
+}
+
+
+
+#endif /* MOTOR_H_ */

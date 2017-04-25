@@ -126,7 +126,7 @@ namespace RCsemi{
 		}
 	}
 
-	inline signed short rotary_encoder::CheckCNT()
+	inline int rotary_encoder::getCount()
 	{
 		if(m_ch == 0){
 			return (signed short)TIM3->CNT;
@@ -139,7 +139,7 @@ namespace RCsemi{
 		}
 	}
 
-	inline void rotary_encoder::ClearCNT()
+	inline void rotary_encoder::clearCount()
 	{
 		if(m_ch == 0){
 			TIM3->CNT = 0;

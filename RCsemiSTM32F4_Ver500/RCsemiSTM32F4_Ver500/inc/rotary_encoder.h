@@ -8,15 +8,17 @@
 #ifndef __ROTARY_ENCODER__
 #define __ROTARY_ENCODER__
 
+#include "../RCsemiCommon/rotary_encoder.hpp"
+
 namespace RCsemi{
 
-class rotary_encoder{
+class rotary_encoder : public RotaryEncoder{
 	int m_ch;
 public:
 	rotary_encoder(int ch);
 
-	signed short CheckCNT();
-	void ClearCNT();
+	int getCount();
+	void clearCount();
 };
 
 }

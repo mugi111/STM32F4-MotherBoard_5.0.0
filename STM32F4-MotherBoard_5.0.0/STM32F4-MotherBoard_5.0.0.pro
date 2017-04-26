@@ -1,4 +1,4 @@
-update=2017/02/16 17:20:43
+update=2017/03/31 16:26:08
 version=1
 last_client=kicad
 [pcbnew]
@@ -139,3 +139,4 @@ LibName107=C:/Program Files/KiCad/share/kicad/library/Zilog
 LibName108=STM32F4-MotherBoard_1.0.2-cache
 LibName109=STM32F4-MotherBoard_3.0.0-cache
 LibName110=STM32F4-MotherBoard_5.0.0-cache
+LibName111=DM3AT-SF-PEJM5

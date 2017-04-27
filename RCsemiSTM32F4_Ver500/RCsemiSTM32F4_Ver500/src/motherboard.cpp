@@ -11,33 +11,34 @@
 #include "../inc/motherboard.h"
 
 namespace RCsemi{
-motherboard::motherboard()
-{
-//LED PUSH ROTARY init
-}
 
-void motherboard::LED_TurnOff()
+motherboard::LED::LED()
 {
 
 }
 
-void motherboard::LED_TurnOn()
+void motherboard::LED::TurnOff()
 {
 
 }
 
-void motherboard::LED_Toggle()
+void motherboard::LED::TurnOn()
 {
 
 }
 
-int motherboard::PushSW_isPushed()
+void motherboard::LED::Toggle()
+{
+
+}
+
+int motherboard::PushSW::isPushed()
 {
 
 	return 0;
 }
 
-unsigned int RotarySW_Check()
+unsigned int motherboard::RotarySW::Check()
 {
 
 	return 0;

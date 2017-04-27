@@ -10,14 +10,26 @@
 
 namespace RCsemi{
 class motherboard{
-	motherboard();
+public:
+	class LED{
+		LED();
 
-	void LED_TurnOff();
-	void LED_TurnOn();
-	void LED_Toggle();
-	int PushSW_isPushed();
-	unsigned int RotarySW_Check();
+		void TurnOff();
+		void TurnOn();
+		void Toggle();
+	};
 
+	class PushSW{
+		PushSW();
+
+		int isPushed();
+	};
+
+	class RotarySW{
+		RotarySW();
+
+		unsigned int Check();
+	};
 
 
 };/* end class */

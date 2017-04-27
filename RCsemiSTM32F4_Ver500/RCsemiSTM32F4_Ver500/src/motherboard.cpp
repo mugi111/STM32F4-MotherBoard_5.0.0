@@ -32,10 +32,20 @@ void motherboard::LED::Toggle()
 
 }
 
+motherboard::PushSW::PushSW()
+{
+
+}
+
 int motherboard::PushSW::isPushed()
 {
 
 	return 0;
+}
+
+motherboard::RotarySW::RotarySW()
+{
+
 }
 
 unsigned int motherboard::RotarySW::Check()

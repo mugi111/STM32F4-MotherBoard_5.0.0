@@ -5,8 +5,15 @@
  *      Author: mugi111
  */
 
+#include "../inc/can.h"
+
+
 namespace RCsemi{
 
+can::can()
+{
+
+}
 
 }
 

@@ -13,7 +13,7 @@ namespace RCsemi{
 class can{
 
 public:
-
+	can();
 };
 
 }

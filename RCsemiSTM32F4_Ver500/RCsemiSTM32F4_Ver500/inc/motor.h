@@ -35,7 +35,7 @@ class motor : public Motor{
 	int m_ch;
 
 public:
-	motor(uint16_t enable_bits);
+	motor(unsigned short ch);
 
 	int drive(int duty);
 	bool brake();

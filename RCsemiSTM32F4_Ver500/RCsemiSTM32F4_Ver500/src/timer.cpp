@@ -148,6 +148,11 @@ void TIM7_IRQHandler(void)
 //
 }
 //systemClock‚âPWM‚Å‹¤—L‚µ‚Ä‚¢‚éTIM7‚Ì\¬‚ğl‚¦’¼‚·
+
+void timer::TIM6_CMT_Init()
+{
+
+}
 }
 
 

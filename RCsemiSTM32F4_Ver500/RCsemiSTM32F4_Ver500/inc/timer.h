@@ -19,6 +19,8 @@ class timer{
 public:
 	void TIM7_CMT_Init();
 	void delay_ms(int msec);
+
+	void TIM6_CMT_Init();
 };
 
 } /* namespace timer */

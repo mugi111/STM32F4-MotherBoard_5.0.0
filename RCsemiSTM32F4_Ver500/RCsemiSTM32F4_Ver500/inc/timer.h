@@ -20,7 +20,7 @@ public:
 	void TIM7_CMT_Init();
 	void delay_ms(int msec);
 
-	void TIM6_CMT_Init();
+	void TIM6_CMT_Init(uint16_t prescaler, uint16_t period);
 };
 
 } /* namespace timer */

@@ -1,13 +1,13 @@
 /***************************************************************************
- *	@ファイル名		:	motherboard.c
+ *	@ファイル名		:	motherboard.h
  *	@概要		:	MB上のLED，プッシュスイッチ，ロータリースイッチの機能を提供します．
  *					以下に，各要素のピン配置を示します．
- *					LED			0:PA8, 1:PA15
- *					PushSW		0:PB10, 1:PC0
+ *					LED			PA15
+ *					PushSW		PB10
  *					RotarySW	0:PC10, 1:PC12, 2:PE0, 3:PE1
- *	@バージョン		:	3.0.0
+ *	@バージョン		:	4.0.0
  *	@開発者			:	キネクト
- *	@Ver3.0.0移行	:	むぎ
+ *	@Ver4.0.0移行	:	むぎ
  *	@使用環境		:	STM32F407VG, MB_Ver4, Coocox CoIDE
  **************************************************************************/
 
@@ -28,7 +28,7 @@ void MB_LED_Init(void)
 
 	/* GPIO設定 */
 	GPIO_InitTypeDef GPIO_InitStructure;
-	GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_8 | GPIO_Pin_15;
+	GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_15;
 	GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -38,37 +38,34 @@ void MB_LED_Init(void)
 /* -------------------------------------------------
  * @関数名	:	MB_LED_TurnOff
  * @概要		:	指定のLEDを消灯します．
- * @引数-num	:	LEDの番号、0, 1
+ * @引数		:	なし
  * @戻り値	:	なし
  * ---------------------------------------------- */
-void MB_LED_TurnOff(int num)
+void MB_LED_TurnOff()
 {
-	if     (num == 0) GPIOA->BSRRH = GPIO_Pin_8;
-	else if(num == 1) GPIOA->BSRRH = GPIO_Pin_15;
+	GPIOA->BSRRH = GPIO_Pin_15;
 }
 
 /* -------------------------------------------------
  * @関数名	:	MB_LED_TurnOn
  * @概要		:	指定のLEDを点灯します．
- * @引数-num	:	LEDの番号、0, 1
+ * @引数		:	なし
  * @戻り値	:	なし
  * ---------------------------------------------- */
-void MB_LED_TurnOn(int num)
+void MB_LED_TurnOn()
 {
-	if     (num == 0) GPIOA->BSRRL = GPIO_Pin_8;
-	else if(num == 1) GPIOA->BSRRL = GPIO_Pin_15;
+	GPIOA->BSRRL = GPIO_Pin_15;
 }
 
 /* -------------------------------------------------
  * @関数名	:	MB_LED_Toggle
  * @概要		:	指定のLEDを前回と違う状態にします．
- * @引数-num	:	LEDの番号、0, 1
+ * @引数		:	なし
  * @戻り値	:	なし
  * ---------------------------------------------- */
-void MB_LED_Toggle(int num)
+void MB_LED_Toggle()
 {
-	if     (num == 0) GPIOA->ODR ^= GPIO_Pin_8;
-	else if(num == 1) GPIOA->ODR ^= GPIO_Pin_15;
+	GPIOA->ODR ^= GPIO_Pin_15;
 }
 
 /* -------------------------------------------------
@@ -93,7 +90,7 @@ void MB_PushSW_Init(void)
 /* -------------------------------------------------
  * @関数名	:	MB_PushSW_IsPushed
  * @概要		:	プッシュスイッチが押されたかどうか判定します．
- * @引数		:	プッシュスイッチの番号
+ * @引数		:	なし
  * @戻り値	:	押されたら1, そうでなければ0
  * ---------------------------------------------- */
 int MB_PushSW_IsPushed()

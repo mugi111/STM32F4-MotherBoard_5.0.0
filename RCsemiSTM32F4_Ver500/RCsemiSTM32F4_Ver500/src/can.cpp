@@ -5,7 +5,7 @@
  *      Author: mugi111
  */
 
-#include "../inc/can.h"
+#include "can.h"
 
 
 namespace RCsemi{

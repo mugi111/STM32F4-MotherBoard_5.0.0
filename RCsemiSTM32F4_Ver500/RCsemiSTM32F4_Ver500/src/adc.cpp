@@ -1,4 +1,4 @@
-#include "../inc/adc.h"
+#include "adc.h"
 #include <stm32f4xx.h>
 #include <stm32f4xx_hal_adc.h>
 

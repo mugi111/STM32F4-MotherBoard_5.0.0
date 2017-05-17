@@ -5,7 +5,7 @@
  *      Author: mugi111
  */
 
-#include "../inc/usart.h"
+#include "usart.h"
 #include <stm32f4xx_hal.h>
 #include <stm32f4xx_hal_usart.h>
 #include <stm32f4xx_hal_rcc.h>

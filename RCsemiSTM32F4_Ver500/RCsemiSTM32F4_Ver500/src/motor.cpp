@@ -5,7 +5,7 @@
  *      Author: mugi111
  */
 
-#include "../inc/motor.h"
+#include "motor.h"
 
 #define DUTY_TO_DIR(duty) ((duty) == BRAKEVALUE	? 0x03 : \
 						   (duty) < 0			? 0x02 : \

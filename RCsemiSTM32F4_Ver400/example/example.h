@@ -27,13 +27,13 @@
 
 //#define __00_MODEL__		1
 //#define __01_DIGITALIO__	1
-//#define __02_MB__			1
+#define __02_MB__			1
 //#define __03_MOTOR__		1
 //#define __04_PSPAD__		1
 //#define __05_ROTARYENC__	1
 //#define __06_ADC__		1
 //#define __07_TERUNET__	1
-#define __09_CAN__		1
+//#define __09_CAN__		1
 
 //#define __08_TOUCH_PANEL__
 

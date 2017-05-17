@@ -23,6 +23,9 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="D:\MicroController\STM32F4\RCsemiSTM32F4_ver200-master\RCsemiSTM32F4_ver200-master\RCsemiSTM32F4_Ver200\lib\rcsemi\src"/>
+			<item value="D:\MicroController\STM32F4\RCsemiSTM32F4_ver200-master\RCsemiSTM32F4_ver200-master\RCsemiSTM32F4_Ver200\lib\rcsemi\inc"/>
+			<item value="C:\Users\mugi111\Desktop\RCsemiCommon-master\inc"/>
 			<item value="C:\Users\mugi111\workspace\RCsemi\src"/>
 			<item value="C:\Users\mugi111\Desktop\aaa\Src"/>
 			<item value="C:\Users\mugi111\workspace\RCsemi\inc"/>

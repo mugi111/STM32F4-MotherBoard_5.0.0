@@ -16,14 +16,28 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.coocox.welcome.ui.WelcomePage" name="" partName="welcome" title="welcome" tooltip="" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
-<org.coocox.welcome.ui.WelcomePage/>
-</input>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.h" partName="digitalIO.h" path="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h" title="digitalIO.h" tooltip="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="505" selectionTopPixel="600"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.c" partName="digitalIO.c" path="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c" title="digitalIO.c" tooltip="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="505" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="motherboard.h" partName="motherboard.h" path="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/motherboard.h" title="motherboard.h" tooltip="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/motherboard.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/motherboard.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="780" selectionTopPixel="814"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="motherboard.c" partName="motherboard.c" path="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c" title="motherboard.c" tooltip="D:/MicroController/STM32F4/STM32F4-MotherBoard_5.0.0/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2799" selectionTopPixel="90"/>
 </editor>
 </editors>
 <views>
@@ -36,22 +50,11 @@
 <viewState CommonNavigator.LINKING_ENABLED="1" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/RCsemiSTM32F4_Ver400"/>
-<element path="/RCsemiSTM32F4_Ver400/lib"/>
-<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi"/>
-<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc"/>
-<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src"/>
-<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework"/>
-<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib"/>
-<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver"/>
-<element path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc"/>
 </expanded>
 <selection>
-<element path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
+<element path="/RCsemiSTM32F4_Ver400/lib"/>
 </selection>
 </viewState>
-</view>
-<view id="org.coocox.component.ui.ComponentView" partName="Components">
-<viewState/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
@@ -62,11 +65,8 @@
 <view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view" partName="Disassembly">
 <viewState disassembly.syncActiveContext="true" disassembly.trackExpression="false"/>
 </view>
-<view id="org.coocox.component.ui.Help" partName="Help">
-<viewState/>
-</view>
 </views>
-<perspectives activePart="org.coocox.welcome.ui.WelcomePage" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.coocox.builder.ui.views.ProjectView" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -96,18 +96,15 @@
 <hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
-<view id="org.coocox.component.ui.ComponentView"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
-<view id="org.coocox.component.ui.Help"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@d290f2">
-<folder activePageID="org.coocox.component.ui.ComponentView" appearance="2" expanded="2">
-<page content="org.coocox.component.ui.ComponentView" label="Components"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.7492212" ratioLeft="481" ratioRight="161" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d290f2">
@@ -116,18 +113,23 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.console.ConsoleView" ratio="0.69966996" ratioLeft="424" ratioRight="182" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d290f2"/>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.17123796" ratioLeft="231" ratioRight="1118" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d290f2"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1a59a0e" ratio="0.69966996" ratioLeft="424" ratioRight="182" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d290f2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.33880597" ratioLeft="227" ratioRight="443" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d290f2"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@16b302c" ratio="0.7185629" ratioLeft="360" ratioRight="141" relationship="2" relative="org.coocox.builder.ui.exampleView">
-<folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
-<page content="org.coocox.component.ui.Help" label="Help"/>
+<folder appearance="2" expanded="2">
+<page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
 <page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44884488" ratioLeft="272" ratioRight="334" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
@@ -247,52 +249,185 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
-<org.coocox.welcome.ui.WelcomePage/>
-</editor>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
-<org.coocox.welcome.ui.WelcomePage/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
-<org.coocox.welcome.ui.WelcomePage/>
-</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motor.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/adc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/can.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/pspad.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/terunet.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/timer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/usart.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/STemWin/Config/LCDConf_FlexColor_Template.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/system_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/example/08_Touch_Panel/WindowDLG.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/STemWin/Config/GUIDRV_Template.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/example/09_Can.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/example/00_Model.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/example/example.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/example/01_DigitalIO.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/example/02_MotherBoard.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/example/02_MotherBoard.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/adc.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/adc.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
-<org.coocox.welcome.ui.WelcomePage/>
-</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/motherboard.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c"/>
 </editors>
-<item historyLabel="welcome" index="0"/>
-<item historyLabel="Repository" index="1"/>
-<item historyLabel="welcome" index="0"/>
-<item historyLabel="welcome" index="2"/>
-<item historyLabel="readme.txt" index="3">
-<position info="not_deleted" x="223" y="0"/>
+<item historyLabel="motor.c" index="1">
+<position info="not_deleted" x="636" y="49"/>
 </item>
-<item historyLabel="welcome" index="2"/>
-<item historyLabel="welcome" index="4"/>
-<item historyLabel="digitalIO.h" index="5">
+<item historyLabel="timer.c" index="0">
+<position info="not_deleted" x="1527" y="0"/>
+</item>
+<item historyLabel="motor.c" index="1">
+<position info="not_deleted" x="636" y="49"/>
+</item>
+<item historyLabel="adc.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="can.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="motor.c" index="1">
+<position info="not_deleted" x="935" y="0"/>
+</item>
+<item historyLabel="pspad.c" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="terunet.c" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="digitalIO.c" index="6">
-<position info="not_deleted" x="547" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_gpio.h" index="7">
-<position info="not_deleted" x="3193" y="0"/>
-</item>
-<item historyLabel="digitalIO.c" index="6">
-<position info="not_deleted" x="547" y="0"/>
-</item>
-<item historyLabel="digitalIO.h" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="welcome" index="4"/>
-<item active="true" historyLabel="welcome" index="8"/>
+<item historyLabel="timer.c" index="7">
+<position info="not_deleted" x="1527" y="0"/>
+</item>
+<item historyLabel="usart.c" index="8">
+<position info="not_deleted" x="693" y="0"/>
+</item>
+<item historyLabel="LCDConf_FlexColor_Template.h" index="9">
+<position info="not_deleted" x="2864" y="0"/>
+</item>
+<item historyLabel="system_stm32f4xx.c" index="10">
+<position info="not_deleted" x="15359" y="6"/>
+</item>
+<item historyLabel="WindowDLG.c" index="11">
+<position info="not_deleted" x="1359" y="29"/>
+</item>
+<item historyLabel="WindowDLG.c" index="11">
+<position info="not_deleted" x="3297" y="0"/>
+</item>
+<item historyLabel="system_stm32f4xx.c" index="10">
+<position info="not_deleted" x="15359" y="6"/>
+</item>
+<item historyLabel="LCDConf_FlexColor_Template.h" index="9">
+<position info="not_deleted" x="2858" y="0"/>
+</item>
+<item historyLabel="GUIDRV_Template.c" index="12">
+<position info="not_deleted" x="2968" y="24"/>
+</item>
+<item historyLabel="GUIDRV_Template.c" index="12">
+<position info="not_deleted" x="5309" y="61"/>
+</item>
+<item historyLabel="system_stm32f4xx.c" index="10">
+<position info="not_deleted" x="15359" y="6"/>
+</item>
+<item historyLabel="09_Can.c" index="13">
+<position info="not_deleted" x="504" y="3"/>
+</item>
+<item historyLabel="00_Model.c" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="example.h" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="09_Can.c" index="13">
+<position info="not_deleted" x="504" y="3"/>
+</item>
+<item historyLabel="example.h" index="15">
+<position info="not_deleted" x="950" y="0"/>
+</item>
+<item historyLabel="01_DigitalIO.c" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="02_MotherBoard.c" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="example.h" index="15">
+<position info="not_deleted" x="673" y="0"/>
+</item>
+<item historyLabel="02_MotherBoard.c" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="example.h" index="15">
+<position info="not_deleted" x="673" y="0"/>
+</item>
+<item historyLabel="02_MotherBoard.c" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="motherboard.c" index="19">
+<position info="not_deleted" x="1357" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_can.c" index="20">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_can.c" index="20">
+<position info="not_deleted" x="23238" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_can.c" index="20">
+<position info="not_deleted" x="5647" y="0"/>
+</item>
+<item historyLabel="adc.h" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="adc.c" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="adc.h" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="digitalIO.h" index="23">
+<position info="not_deleted" x="505" y="0"/>
+</item>
+<item historyLabel="digitalIO.c" index="24">
+<position info="not_deleted" x="1212" y="0"/>
+</item>
+<item historyLabel="digitalIO.h" index="23">
+<position info="not_deleted" x="505" y="0"/>
+</item>
+<item historyLabel="digitalIO.c" index="24">
+<position info="not_deleted" x="0" y="505"/>
+</item>
+<item historyLabel="digitalIO.h" index="23">
+<position info="not_deleted" x="505" y="0"/>
+</item>
+<item historyLabel="motherboard.h" index="25">
+<position info="not_deleted" x="210" y="0"/>
+</item>
+<item historyLabel="digitalIO.h" index="23">
+<position info="not_deleted" x="505" y="0"/>
+</item>
+<item historyLabel="motherboard.h" index="25">
+<position info="not_deleted" x="0" y="440"/>
+</item>
+<item historyLabel="motherboard.c" index="26">
+<position info="not_deleted" x="2799" y="0"/>
+</item>
+<item historyLabel="motherboard.h" index="25">
+<position info="not_deleted" x="0" y="440"/>
+</item>
+<item historyLabel="motherboard.c" index="27">
+<position info="not_deleted" x="2799" y="0"/>
+</item>
+<item active="true" historyLabel="motherboard.h" index="25">
+<position info="not_deleted" x="1404" y="0"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -300,8 +435,11 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h">
-<persistable path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="motherboard.c" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/motherboard.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="motherboard.h" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/inc/motherboard.h">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/motherboard.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.c" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c">
 <persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/digitalIO.c"/>
@@ -309,42 +447,38 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="digitalIO.h" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h">
 <persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/digitalIO.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="readme.txt" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt">
-<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/readme.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="adc.c" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/src/adc.c">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/src/adc.c"/>
 </file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="adc.h" tooltip="RCsemiSTM32F4_Ver400/lib/rcsemi/inc/adc.h">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/rcsemi/inc/adc.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="RCsemiSTM32F4_Ver400/main.c">
-<persistable path="/RCsemiSTM32F4_Ver400/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_can.c" tooltip="RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="06_ADC.c" tooltip="RCsemiSTM32F4_Ver300/example/06_ADC.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/06_ADC.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="02_MotherBoard.c" tooltip="RCsemiSTM32F4_Ver400/example/02_MotherBoard.c">
+<persistable path="/RCsemiSTM32F4_Ver400/example/02_MotherBoard.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="05_RotaryENC.c" tooltip="RCsemiSTM32F4_Ver300/example/05_RotaryENC.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/05_RotaryENC.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="01_DigitalIO.c" tooltip="RCsemiSTM32F4_Ver400/example/01_DigitalIO.c">
+<persistable path="/RCsemiSTM32F4_Ver400/example/01_DigitalIO.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="04_PSpad.c" tooltip="RCsemiSTM32F4_Ver300/example/04_PSpad.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/04_PSpad.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="example.h" tooltip="RCsemiSTM32F4_Ver400/example/example.h">
+<persistable path="/RCsemiSTM32F4_Ver400/example/example.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="03_Motor.c" tooltip="RCsemiSTM32F4_Ver300/example/03_Motor.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/03_Motor.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="00_Model.c" tooltip="RCsemiSTM32F4_Ver400/example/00_Model.c">
+<persistable path="/RCsemiSTM32F4_Ver400/example/00_Model.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="01_DigitalIO.c" tooltip="RCsemiSTM32F4_Ver300/example/01_DigitalIO.c">
-<persistable path="/RCsemiSTM32F4_Ver300/example/01_DigitalIO.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="09_Can.c" tooltip="RCsemiSTM32F4_Ver400/example/09_Can.c">
+<persistable path="/RCsemiSTM32F4_Ver400/example/09_Can.c"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="time.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q3\arm-none-eabi\include\time.h">
-<persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q3\arm-none-eabi\include\time.h" project="RCsemiSTM32F4_Ver300"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="GUIDRV_Template.c" tooltip="RCsemiSTM32F4_Ver400/lib/STemWin/Config/GUIDRV_Template.c">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/STemWin/Config/GUIDRV_Template.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="terunet.c" tooltip="RCsemiSTM32F4_Ver300/lib/rcsemi/src/terunet.c">
-<persistable path="/RCsemiSTM32F4_Ver300/lib/rcsemi/src/terunet.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WindowDLG.c" tooltip="RCsemiSTM32F4_Ver400/example/08_Touch_Panel/WindowDLG.c">
+<persistable path="/RCsemiSTM32F4_Ver400/example/08_Touch_Panel/WindowDLG.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.h" tooltip="RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h">
-<persistable path="/RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h">
-<persistable path="/RCsemiSTM32F4_Ver300/lib/STM32F4xx_StdFramework/StdPeriphLib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/system_stm32f4xx.c">
+<persistable path="/RCsemiSTM32F4_Ver400/lib/STM32F4xx_StdFramework/StdPeriphLib/system_stm32f4xx.c"/>
 </file>
 </mruList>
 </workbench>

@@ -55,7 +55,7 @@ Purpose     : Display driver configuration file
 #define LCDCONF_H
 
 #include <stm32f4xx.h>
-#include "touch_lcd.h"
+//#include "touch_ulcd.h"
 
 #endif /* LCDCONF_H */
 

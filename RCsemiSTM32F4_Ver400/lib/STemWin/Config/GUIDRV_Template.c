@@ -58,7 +58,7 @@ Purpose     : Template driver, could be used as starting point for new
 #include "GUI_Private.h"
 #include "LCD_ConfDefaults.h"
 
-#include "touch_lcd.h"
+//#include "touch_lcd.h"
 
 /*********************************************************************
 *

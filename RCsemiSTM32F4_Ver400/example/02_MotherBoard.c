@@ -1,6 +1,6 @@
 /***************************************************************************
  *	@ファイル名		:	02_MotherBoard.c
- *	@概要		:	マザーボード上の各機能，LED*2，プッシュスイッチ*2，
+ *	@概要		:	マザーボード上の各機能，LED，プッシュスイッチ，
 					4ビットロータリースイッチを動作させる．
  *					結果はDigitalIOの出力で確認する
  *
@@ -8,7 +8,8 @@
  *					必ず記入するようにしてください．
  *	@バージョン		:	2.0.0
  *	@開発者		:	キネクト
- *	@使用環境		:	STM32F4DISCOVERY, MB_Ver3, MB_Ver4, Coocox CoIDE
+ *	@書き換え		：	むぎ
+ *	@使用環境		:	STM32F4DISCOVERY, MB_Ver5, Coocox CoIDE
  **************************************************************************/
 
 #include "example.h"
@@ -28,7 +29,7 @@
 int main(void)
 {
 	/* -------------	変数宣言	----------------- */
-	int pushsw_status[2];
+	int pushsw_status;
 	u8 rotarysw_value;
 
 	/* ---------------------------------------------- */
@@ -51,17 +52,14 @@ int main(void)
 	/* -------------	メインループ	------------- */
 	while(1)
 	{
-		pushsw_status[0] = MB_PushSW_IsPushed(0);	// プッシュスイッチ0が押されている:1 else :0
-		pushsw_status[1] = MB_PushSW_IsPushed(1);	// プッシュスイッチ1が押されている:1 else :0
+		pushsw_status = MB_PushSW_IsPushed();	// プッシュスイッチが押されている:1 else :0
 
 		rotarysw_value = MB_RotarySW_Check();	// ロータリースイッチが示す値(0-15)
 
-		MB_LED_Toggle(0);	// LED0の状態を反転させる
-		MB_LED_Toggle(1);	// LED1の状態を反転させる
+		MB_LED_Toggle();	// LEDの状態を反転させる
 
 		/* プッシュスイッチの状態を出力する */
-		DIO_OutputPin(0, 0, pushsw_status[0]);
-		DIO_OutputPin(0, 1, pushsw_status[1]);
+		DIO_OutputPin(0, 0, pushsw_status);
 		
 		/* ロータリースイッチの値を4bit値として出力する */
 		if(rotarysw_value & 0x01)	DIO_OutputPin(0, 2, 1);

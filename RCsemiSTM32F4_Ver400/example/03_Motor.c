@@ -6,7 +6,7 @@
  *					必ず記入するようにしてください．
  *	@バージョン		:	2.0.0
  *	@開発者		:	キネクト
- *	@使用環境		:	STM32F4DISCOVERY, MB_Ver3, MB_Ver4, Coocox CoIDE
+ *	@使用環境		:	STM32F4DISCOVERY, MB_Ver3, MB_Ver4, MB_Ver5, Coocox CoIDE
  **************************************************************************/
 
 #include "example.h"

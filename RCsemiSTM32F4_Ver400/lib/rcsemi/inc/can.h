@@ -11,11 +11,18 @@
 
 #include <stm32f4xx.h>
 
-//#define MDD 0x2
-//#define MD  0x3
-//#define ENC 0x4
-//#define DIO 0x5
-//#define ADC 0x6
+#define MASTER 0x01
+//Å´motorDriver
+#define M_PWM  0x02
+#define M_AIR  0x03
+#define M_ENC  0x04
+#define M_POT  0x05
+#define M_CURRENT 0x06
+//Å™
+#define DIO 0x07
+#define ADC 0x08
+#define ENC 0x09
+
 
 void CanInit(void);
 void SendFrame(u8 type, u8 add, u8* buff, int data_length);

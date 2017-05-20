@@ -19,6 +19,7 @@
 
 void CanInit(void);
 void SendFrame(u8 type, u8 add, u8* buff, int data_length);
+void Can_Motor_Drive(u8 mode, u8 feq, u8 board, u8 zerostate, u8 ch, u8 pwm);
 void EmergencyStop(int stop);
 
 #endif /* __CAN_H__ */

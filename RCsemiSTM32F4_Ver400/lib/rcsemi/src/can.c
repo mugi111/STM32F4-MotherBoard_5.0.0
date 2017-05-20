@@ -74,6 +74,16 @@ void SendFrame(u8 type, u8 add, u8* buff, int data_length)
 //	return receive_date;
 //}
 
+void Can_DIO_OutputPin(u8 board, u8 pin, u8 status)
+{
+	u8 buff[3];
+
+	buff[0] |= pin<<1;
+	buff[0] |= status;
+
+	SendFrame(DIO, board, buff, 1);
+}
+
 void Can_Motor_Drive(u8 type, u8 mode, u8 feq, u8 board, u8 zerostate, u8 ch, u8 pwm)
 {
 	u8 buff[3];

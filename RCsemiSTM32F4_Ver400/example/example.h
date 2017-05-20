@@ -15,11 +15,12 @@
  *											簡単なロボットはこれを基にプログラムしていくとよい．
  *					[05_RotaryENC.c]	:
  *					[06_ADC.c]			:
- *					[07_Terunet.c]		:
+ *					[09_Can.c]			:
  *
- *	@バージョン		:	2.0.0
+ *	@バージョン		:	3.0.0
  *	@開発者		:	キネクト
- *	@使用環境		:	STM32F4DISCOVERY, MB_Ver3, MB_Ver4, Coocox CoIDE
+ *					むぎ
+ *	@使用環境		:	STM32F4DISCOVERY, MB_Ver3, MB_Ver4, MB_Ver5, Coocox CoIDE
  **************************************************************************/
 
 #ifndef __EXAMPLE_H__

@@ -1,9 +1,13 @@
 /*/***************************************************************************
  *	@ファイル名		:	can.c
  *	@概要		:	CAN0,CAN1ポートを用いてCAN通信を行います.
- *	@バージョン		:	0.0.1
+ *	@バージョン		:	0.1.0
  *	@開発者			:	むぎ
- *	@使用環境		:	STM32F407VG, MB_Ver4
+ *	@使用環境		:	STM32F407VG, MB_Ver5
+ *
+ *	非常停止　全ビット　1
+ *	解除		  全ビット　0
+ *
  **************************************************************************/
 
 #include <stm32f4xx.h>
@@ -11,7 +15,7 @@
 #include "stm32f4xx_gpio.h"
 #include "can.h"
 
-void can_init(void)
+void CanInit(void)
 {
 
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE);
@@ -45,21 +49,18 @@ void can_init(void)
 
 }
 
-void send_frame()
+void SendFrame(u8 type, u8 add, u8* buff, int data_length)
 {
+	int i;
 	CanTxMsg CanTxMsgStructure;
-	CanTxMsgStructure.StdId = 0xA5;
+	CanTxMsgStructure.StdId = type | add;
 	CanTxMsgStructure.ExtId = 0x00;
 	CanTxMsgStructure.IDE = CAN_ID_STD;
 	CanTxMsgStructure.RTR = CAN_RTR_DATA;
-	CanTxMsgStructure.DLC = 6;
-	CanTxMsgStructure.Data[0] = 0xAA;
-	CanTxMsgStructure.Data[1] = 0x55;
-	CanTxMsgStructure.Data[2] = 0x00;
-	CanTxMsgStructure.Data[3] = 0xFF;
-	CanTxMsgStructure.Data[4] = 0x01;
-	CanTxMsgStructure.Data[5] = 0x80;
-
+	CanTxMsgStructure.DLC = date_length;
+	for(i=0;i<data_length;i++){
+		CanTxMsgStructure.Data[i] = buff[i];
+	}
 	CAN_Transmit(CAN1, &CanTxMsgStructure);
 }
 
@@ -73,7 +74,17 @@ void send_frame()
 //	return receive_date;
 //}
 
-void emergency_stop(void)
+void EmergencyStop(int stop)
 {
+	CanTxMsg CanTxMsgStructure;
+	CanTxMsgStructure.StdId = 0x00;
+	CanTxMsgStructure.ExtId = 0x00;
+	CanTxMsgStructure.IDE = CAN_ID_STD;
+	CanTxMsgStructure.RTR = CAN_RTR_DATA;
+	CanTxMsgStructure.DLC = 8;
+	for(i=0;i<8;i++){
+		CanTxMsgStructure.Data[i] = stop;
+	}
 
+	CAN_Transmit(CAN1, &CanTxMsgStructure);
 }

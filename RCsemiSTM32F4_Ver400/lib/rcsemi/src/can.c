@@ -8,6 +8,17 @@
  *	非常停止　全ビット　1
  *	解除		  全ビット　0
  *
+ *MASTER		0x01
+ *↓motorDriver
+ *PWM MD  		0x02
+ *AIRCYLINDER	0x03
+ *PID MD		0x04
+ *POT MD		0x05
+ *CURRENT MD	0x06
+ *↑
+ *DIO			0x07
+ *ADC			0x08
+ *ENC			0x09
  **************************************************************************/
 
 #include <stm32f4xx.h>
@@ -17,21 +28,20 @@
 
 void CanInit(void)
 {
-
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE);
 
-	CAN_InitTypeDef CAN_InitStracture;
-	CAN_InitStracture.CAN_Mode = CAN_Mode_LoopBack;
-//	CAN_InitStracture.CAN_SJW = CAN_SJW_1tq;
-	CAN_InitStracture.CAN_BS1 = CAN_BS1_4tq;
-	CAN_InitStracture.CAN_BS2 = CAN_BS2_3tq;
-	CAN_InitStracture.CAN_TTCM = DISABLE;
-	CAN_InitStracture.CAN_ABOM = DISABLE;
-	CAN_InitStracture.CAN_AWUM = DISABLE;
-	CAN_InitStracture.CAN_NART = DISABLE;
-	CAN_InitStracture.CAN_RFLM = ENABLE;
-	CAN_InitStracture.CAN_TXFP = DISABLE;
-	CAN_InitStracture.CAN_Prescaler = 128;
+	CAN_InitTypeDef CAN_InitStructure;
+	CAN_InitStructure.CAN_Mode = CAN_Mode_LoopBack;
+//	CAN_InitStructure.CAN_SJW = CAN_SJW_1tq;
+	CAN_InitStructure.CAN_BS1 = CAN_BS1_4tq;
+	CAN_InitStructure.CAN_BS2 = CAN_BS2_3tq;
+	CAN_InitStructure.CAN_TTCM = DISABLE;
+	CAN_InitStructure.CAN_ABOM = DISABLE;
+	CAN_InitStructure.CAN_AWUM = DISABLE;
+	CAN_InitStructure.CAN_NART = DISABLE;
+	CAN_InitStructure.CAN_RFLM = ENABLE;
+	CAN_InitStructure.CAN_TXFP = DISABLE;
+	CAN_InitStructure.CAN_Prescaler = 128;
 
 	CAN_Init(CAN1, &CAN_InitStracture);
 

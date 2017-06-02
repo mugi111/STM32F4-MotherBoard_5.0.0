@@ -43,16 +43,16 @@ void CanInit(void)
 	CAN_InitStructure.CAN_TXFP = DISABLE;
 	CAN_InitStructure.CAN_Prescaler = 128;
 
-	CAN_Init(CAN1, &CAN_InitStracture);
+	CAN_Init(CAN1, &CAN_InitStructure);
 
-	GPIO_InitTypeDef CAN_GPIOInit_Stracture;
-	CAN_GPIOInit_Stracture.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9;
-	CAN_GPIOInit_Stracture.GPIO_Mode = GPIO_Mode_AF;
-	CAN_GPIOInit_Stracture.GPIO_OType = GPIO_OType_PP;
-	CAN_GPIOInit_Stracture.GPIO_PuPd = GPIO_PuPd_UP;
-	CAN_GPIOInit_Stracture.GPIO_Speed = GPIO_Speed_100MHz;
+	GPIO_InitTypeDef CAN_GPIOInit_Structure;
+	CAN_GPIOInit_Structure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9;
+	CAN_GPIOInit_Structure.GPIO_Mode = GPIO_Mode_AF;
+	CAN_GPIOInit_Structure.GPIO_OType = GPIO_OType_PP;
+	CAN_GPIOInit_Structure.GPIO_PuPd = GPIO_PuPd_UP;
+	CAN_GPIOInit_Structure.GPIO_Speed = GPIO_Speed_100MHz;
 
-	GPIO_Init(GPIOB, &CAN_GPIOInit_Stracture);
+	GPIO_Init(GPIOB, &CAN_GPIOInit_Structure);
 
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource8, GPIO_AF_CAN1);
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource9, GPIO_AF_CAN1);

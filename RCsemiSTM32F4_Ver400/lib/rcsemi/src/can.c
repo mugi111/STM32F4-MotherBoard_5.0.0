@@ -94,14 +94,14 @@ void Can_DIO_OutputPin(u8 board, u8 pin, u8 status)
 	SendFrame(C_DIO, board, buff, 1);
 }
 
-void Can_Motor_Drive(u8 type, u8 mode, u8 feq, u8 board, u8 zerostate, u8 ch, u8 pwm)
+void Can_Motor_Drive(can_md_config_t* config, u8 ch, u8 pwm)
 {
 	u8 buff[3] = {0};
 
-	buff[0] |= mode<<4;
-	buff[0] |= feq;
+	buff[0] |= config->mode<<4;
+	buff[0] |= config->feq;
 	buff[1] |= ch<<4;
-	buff[1] |= zerostate;
+	buff[1] |= config->zerostate;
 	if(pwm > 0){
 		buff[2] = 1;
 	}else {
@@ -109,7 +109,7 @@ void Can_Motor_Drive(u8 type, u8 mode, u8 feq, u8 board, u8 zerostate, u8 ch, u8
 	}
 	buff[2] |= ABS_VAL(pwm)<<1;
 
-	SendFrame(type, board, buff, 3);
+	SendFrame(config->type, config->board, buff, 3);
 }
 
 void EmergencyStop(int stop)

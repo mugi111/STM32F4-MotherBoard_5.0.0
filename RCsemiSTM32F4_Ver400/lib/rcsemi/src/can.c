@@ -59,7 +59,7 @@ void CanInit(void)
 
 }
 
-void SendFrame(u8 type, u8 add, u8* buff, int data_length)
+void SendFrame(u8 type, u8 add, u8* buff, u8 data_length)
 {
 	int i;
 	CanTxMsg CanTxMsgStructure;
@@ -67,7 +67,7 @@ void SendFrame(u8 type, u8 add, u8* buff, int data_length)
 	CanTxMsgStructure.ExtId = 0x00;
 	CanTxMsgStructure.IDE = CAN_ID_STD;
 	CanTxMsgStructure.RTR = CAN_RTR_DATA;
-	CanTxMsgStructure.DLC = date_length;
+	CanTxMsgStructure.DLC = data_length;
 	for(i=0;i<data_length;i++){
 		CanTxMsgStructure.Data[i] = buff[i];
 	}
@@ -86,17 +86,17 @@ void SendFrame(u8 type, u8 add, u8* buff, int data_length)
 
 void Can_DIO_OutputPin(u8 board, u8 pin, u8 status)
 {
-	u8 buff[3];
+	u8 buff[3] = {0	};
 
 	buff[0] |= pin<<1;
 	buff[0] |= status;
 
-	SendFrame(DIO, board, buff, 1);
+	SendFrame(C_DIO, board, buff, 1);
 }
 
 void Can_Motor_Drive(u8 type, u8 mode, u8 feq, u8 board, u8 zerostate, u8 ch, u8 pwm)
 {
-	u8 buff[3];
+	u8 buff[3] = {0};
 
 	buff[0] |= mode<<4;
 	buff[0] |= feq;
@@ -120,7 +120,7 @@ void EmergencyStop(int stop)
 	CanTxMsgStructure.IDE = CAN_ID_STD;
 	CanTxMsgStructure.RTR = CAN_RTR_DATA;
 	CanTxMsgStructure.DLC = 8;
-	for(i=0;i<8;i++){
+	for(int i=0;i<8;i++){
 		CanTxMsgStructure.Data[i] = stop;
 	}
 

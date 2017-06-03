@@ -11,7 +11,7 @@
 #include "motor.h"
 #include "digitalIO.h"
 
-_motor_status_t gMotor_status[3] = {{{0}}};
+_motor_status_t gMotor_status[2] = {{{0}}};
 
 /* デューティ比を回転を表す2bitに変換する */
 #define DUTY_TO_DIR(duty) ((duty) == BRAKEVALUE	? 0x03 : \
@@ -36,7 +36,7 @@ _motor_status_t gMotor_status[3] = {{{0}}};
 void MotorDriver_Init(u16 enable_bits)
 {
 	int i;
-	for(i = 0; i < 12; i++)
+	for(i = 0; i < 8; i++)
 	{
 		if(enable_bits & (1<<i))	gMotor_status[i>>2].isEnable[i&3] = 1;
 		else						gMotor_status[i>>2].isEnable[i&3] = 0;
@@ -56,7 +56,7 @@ void MotorDriver_Init(u16 enable_bits)
 void Motor_Drive(u8 ch, short duty)
 {
 	u8 port = ch>>2;	// 0:0-3 / 1:4-7
-	ch &= 0x02; 		// 0-2に制限
+	ch &= 0x03; 		// 0-2に制限
 
 	u8 dir_now = DUTY_TO_DIR(duty);
 	u8 dir_old = gMotor_status[port].dir_old[ch];

@@ -38,16 +38,15 @@ int main(void)
 	SystemCoreClockUpdate();	// **最初に呼び出す
 	TIM7_CMT_Init();	// delay関数を利用するための初期化
 
-	MB_LED_Init();		// **マザーボード上のLED*2を初期化する
-	MB_PushSW_Init();	// **マザーボード上のプッシュスイッチ*2を初期化する
+	MB_LED_Init();		// **マザーボード上のLEDを初期化する
+	MB_PushSW_Init();	// **マザーボード上のプッシュスイッチを初期化する
 	MB_RotarySW_Init();	// **マザーボード上のロータリースイッチを初期化する
 
-	DIO0_Init(0x3F, DIO_MODE_OUT);	// 使い方は"01_DigitalIO.c"を参照
-
+	DIO0_Init(0xFF, DIO_MODE_OUT);	// 使い方は"01_DigitalIO.c"を参照
+	DIO1_Init(0xFF, DIO_MODE_OUT);
 	/* ---------------------------------------------- */
 
-	MB_LED_TurnOn(0);	// LED0を点灯させる
-	MB_LED_TurnOff(1);	// LED1を消灯させる
+	MB_LED_TurnOn();	// LEDを点灯させる
 
 	/* -------------	メインループ	------------- */
 	while(1)

@@ -36,9 +36,7 @@ int main(void)
 	DIO0_Init(0xFF, DIO_MODE_OUT);	// **モータポートはDIOなので，初期化が必要．使い方は"01_DigitalIO.c"を参照
 	DIO1_Init(0xFF, DIO_MODE_OUT);	// **モータポートはDIOなので，初期化が必要．使い方は"01_DigitalIO.c"を参照
 
-	MotorDriver_Init(0xF0);	// **モータポートに対応するビットを1にすることで初期化される．
-														// **この場合，MOTOR0-3, 8-11をモータポートとして初期化する．
-														// **設定されていないMOTOR4-7はDigitalIOとして利用可能である．
+	MotorDriver_Init(0xFF);
 
 	TIM7_CMT_Init();	// **PWM生成用，duty比100%であったとしても必要になる．
 
@@ -52,15 +50,10 @@ int main(void)
 		rotarysw_value = MB_RotarySW_Check();	// ロータリースイッチが示す値
 
 		/* 指定されたduty比が出力される */
-		Motor_Drive(0, rotarysw_value);
-		Motor_Drive(1, rotarysw_value * 2);
-		Motor_Drive(2, rotarysw_value * 3);
-		Motor_Drive(3, rotarysw_value * 6);
-
-		Motor_Drive(8, -rotarysw_value * 3);
-		Motor_Drive(9, -rotarysw_value * 6);
-		Motor_Drive(10, BRAKEVALUE);	// ショートブレーキ
-		Motor_Drive(11, BRAKEVALUE);	// ショートブレーキ
+		Motor_Drive(0, rotarysw_value * 3);
+		Motor_Drive(1, rotarysw_value * 6);
+		Motor_Drive(2, -rotarysw_value * 6);
+		Motor_Drive(3, BRAKEVALUE);
 		
 		/* ↓↓　これはモータポートとして初期化したためやってはいけない　↓↓ */
 		/*

@@ -52,16 +52,23 @@ void DIO0_Init(u8 pin, GPIOMode_TypeDef mode)
 	GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
+	/* PORTA */
+	if(pin & 0x70){
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+		GPIO_InitStructure.GPIO_Pin = 0x0000;
+		if(pin & 0x10)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_8;	// PB13
+		if(pin & 0x20)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_11;	// PB14
+		if(pin & 0x40)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_12;	// PB15
+		GPIO_Init(GPIOA, &GPIO_InitStructure);
+	}
+
 	/* PORTB */
-	if(pin & 0xFD){
+	if(pin & 0x8D){
 		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
 		GPIO_InitStructure.GPIO_Pin = 0x0000;
 		if(pin & 0x01)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_7;	// PB7
 		if(pin & 0x04)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_11;	// PB11
 		if(pin & 0x08)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_12;	// PB12
-		if(pin & 0x10)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_13;	// PB13
-		if(pin & 0x20)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_14;	// PB14
-		if(pin & 0x40)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_15;	// PB15
 		if(pin & 0x80)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_6;  // PB6
 		GPIO_Init(GPIOB, &GPIO_InitStructure);
 	}
@@ -110,7 +117,7 @@ void DIO1_Init(u8 pin, GPIOMode_TypeDef mode)
 		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 		GPIO_InitStructure.GPIO_Pin = 0x0000;
 		if(pin & 0x20)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_2;	// PD2
-		if(pin & 0x80)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_7;	// PD7
+		if(pin & 0x80)	GPIO_InitStructure.GPIO_Pin |= GPIO_Pin_6;	// PD7
 		GPIO_Init(GPIOD, &GPIO_InitStructure);
 	}
 	/* PORTE */

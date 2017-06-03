@@ -17,14 +17,20 @@
 
 int main(void)
 {
+	SystemCoreClockUpdate();
+
+	MB_LED_Init();
+	MB_PushSW_Init();
+	CanInit();
 
 	while(1)
 	{
-
+		if(MB_PushSW_IsPushed()){
+			MB_LED_Toggle();
+			SendFrame(0, 0, 0, 0);
+		}
 	}
 }
-
-
 
 
 /******************************/

@@ -19,15 +19,19 @@ int main(void)
 {
 	SystemCoreClockUpdate();
 
+//	u8 pushSW_State = 0;
+	u8 InitSuccess = 0;
+
 	MB_LED_Init();
 	MB_PushSW_Init();
-	CanInit();
+	InitSuccess = CanInit();
+	MB_LED_TurnOn();
 
 	while(1)
 	{
-		if(MB_PushSW_IsPushed()){
-			MB_LED_Toggle();
+		if(InitSuccess == CAN_InitStatus_Success){
 			SendFrame(0, 0, 0, 0);
+			MB_LED_TurnOff();
 		}
 	}
 }

@@ -26,13 +26,31 @@
 
 #define ABS_VAL(val) ((val) < 0 ? -(val) : (val))
 
-void CanInit(void)
+uint8_t CanInit(void)
 {
+	uint8_t init;
+
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE);
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB ,ENABLE);
+
+
+	GPIO_InitTypeDef CAN_GPIOInit_Structure;
+	CAN_GPIOInit_Structure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9;
+	CAN_GPIOInit_Structure.GPIO_Mode = GPIO_Mode_AF;
+	CAN_GPIOInit_Structure.GPIO_OType = GPIO_OType_PP;
+	CAN_GPIOInit_Structure.GPIO_PuPd = GPIO_PuPd_UP;
+	CAN_GPIOInit_Structure.GPIO_Speed = GPIO_Speed_100MHz;
+	GPIO_Init(GPIOB, &CAN_GPIOInit_Structure);
+
+	GPIO_PinAFConfig(GPIOB, GPIO_PinSource8, GPIO_AF_CAN1);
+	GPIO_PinAFConfig(GPIOB, GPIO_PinSource9, GPIO_AF_CAN1);
+
+
+	CAN_DeInit(CAN1);
 
 	CAN_InitTypeDef CAN_InitStructure;
-	CAN_InitStructure.CAN_Mode = CAN_Mode_LoopBack;
-//	CAN_InitStructure.CAN_SJW = CAN_SJW_1tq;
+	CAN_InitStructure.CAN_Mode = CAN_Mode_Normal;
+	CAN_InitStructure.CAN_SJW = CAN_SJW_1tq;
 	CAN_InitStructure.CAN_BS1 = CAN_BS1_4tq;
 	CAN_InitStructure.CAN_BS2 = CAN_BS2_3tq;
 	CAN_InitStructure.CAN_TTCM = DISABLE;
@@ -43,20 +61,9 @@ void CanInit(void)
 	CAN_InitStructure.CAN_TXFP = DISABLE;
 	CAN_InitStructure.CAN_Prescaler = 128;
 
-	CAN_Init(CAN1, &CAN_InitStructure);
+	init = CAN_Init(CAN1, &CAN_InitStructure);
 
-	GPIO_InitTypeDef CAN_GPIOInit_Structure;
-	CAN_GPIOInit_Structure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9;
-	CAN_GPIOInit_Structure.GPIO_Mode = GPIO_Mode_AF;
-	CAN_GPIOInit_Structure.GPIO_OType = GPIO_OType_PP;
-	CAN_GPIOInit_Structure.GPIO_PuPd = GPIO_PuPd_UP;
-	CAN_GPIOInit_Structure.GPIO_Speed = GPIO_Speed_100MHz;
-
-	GPIO_Init(GPIOB, &CAN_GPIOInit_Structure);
-
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource8, GPIO_AF_CAN1);
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource9, GPIO_AF_CAN1);
-
+	return init;
 }
 
 void SendFrame(u8 type, u8 add, u8* buff, u8 data_length)

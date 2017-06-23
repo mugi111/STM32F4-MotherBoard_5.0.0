@@ -21,18 +21,28 @@ int main(void)
 
 //	u8 pushSW_State = 0;
 	u8 InitSuccess = 0;
+	u8 buff[8] = {1, 1, 1, 1, 1, 0, 0, 0};
+
+	CanRxMsg RxMsg;
 
 	MB_LED_Init();
-	MB_PushSW_Init();
 	InitSuccess = CanInit();
+	MB_PushSW_Init();
 	MB_LED_TurnOn();
-
+	FilterConfig();
+    RxMsg.StdId = 0x00;
+    RxMsg.IDE = CAN_ID_STD;
+    RxMsg.DLC = 0;
+    RxMsg.Data[0] = 0x00;
+    RxMsg.Data[1] = 0x00;
 	while(1)
 	{
 		if(InitSuccess == CAN_InitStatus_Success){
-			SendFrame(0, 0, 0, 0);
+			SendFrame(0, 0, buff, 5);
 			MB_LED_TurnOff();
 		}
+		CAN_Receive(CAN1, CAN_FIFO0, &RxMsg);
+
 	}
 }
 

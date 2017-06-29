@@ -39,7 +39,7 @@ uint8_t CanInit(void)
 	CAN_GPIOInit_Structure.GPIO_Mode = GPIO_Mode_AF;
 	CAN_GPIOInit_Structure.GPIO_OType = GPIO_OType_PP;
 	CAN_GPIOInit_Structure.GPIO_PuPd = GPIO_PuPd_UP;
-	CAN_GPIOInit_Structure.GPIO_Speed = GPIO_Speed_100MHz;
+	CAN_GPIOInit_Structure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB, &CAN_GPIOInit_Structure);
 
 	GPIO_PinAFConfig(GPIOB, GPIO_PinSource8, GPIO_AF_CAN1);
@@ -54,12 +54,12 @@ uint8_t CanInit(void)
 	CAN_InitStructure.CAN_NART = DISABLE;
 	CAN_InitStructure.CAN_RFLM = DISABLE;
 	CAN_InitStructure.CAN_TXFP = DISABLE;
-	CAN_InitStructure.CAN_Mode = CAN_Mode_LoopBack;
+	CAN_InitStructure.CAN_Mode = CAN_Mode_Normal;
 	CAN_InitStructure.CAN_SJW = CAN_SJW_1tq;
 
-	CAN_InitStructure.CAN_BS1 = CAN_BS1_6tq;
-	CAN_InitStructure.CAN_BS2 = CAN_BS2_8tq;
-	CAN_InitStructure.CAN_Prescaler = 16;
+	CAN_InitStructure.CAN_BS1 = CAN_BS1_11tq;
+	CAN_InitStructure.CAN_BS2 = CAN_BS2_2tq;
+	CAN_InitStructure.CAN_Prescaler = 3;
 	CAN_Init(CAN1, &CAN_InitStructure);
 
 	init = CAN_Init(CAN1, &CAN_InitStructure);
@@ -82,49 +82,25 @@ void FilterConfig()
     CAN_FilterInit(&CAN_FilterInitStructure);
 }
 
-void SendFrame(u8 type, u8 add, u8* buff, u8 data_length)
+void CanSendFrame(u8 Type, u8 Addr, u8* Buff, u8 DataLength, u8 FrameMode)
 {
 	int i;
 	u8 TransmitMailbox;
 	CanTxMsg TxMessage;
     TxMessage.StdId = 0x09;
-    TxMessage.RTR = CAN_RTR_DATA;
+    TxMessage.RTR = FrameMode;
     TxMessage.IDE = CAN_ID_STD;
-    TxMessage.DLC = 2;
-    TxMessage.Data[0] = 111;
-    TxMessage.Data[1] = 222;
+    TxMessage.DLC = DataLength;
+
+    for(int i=0;i<DataLength;i++)	TxMessage.Data[i] = Buff[i];
 
     TransmitMailbox = CAN_Transmit(CAN1, &TxMessage);
-    u8 uwCounter = 0;
-    while((CAN_TransmitStatus(CAN1, TransmitMailbox)  !=  CANTXOK) && (uwCounter  !=  0xFFFF)) {
-        uwCounter++;
-    }
 
-    uwCounter = 0;
-    while((CAN_MessagePending(CAN1, CAN_FIFO0) < 1) && (uwCounter  !=  0xFFFF)) {
-        uwCounter++;
+    u8 timeout = 0;
+    while((CAN_TransmitStatus(CAN1, TransmitMailbox) != CANTXOK) && (timeout != 0xFFFF)) {
+        timeout++;
     }
-//	CanTxMsg CanTxMsgStructure;
-//	CanTxMsgStructure.StdId = 0x00;
-//	CanTxMsgStructure.ExtId = 0x00;
-//	CanTxMsgStructure.IDE = CAN_ID_STD;
-//	CanTxMsgStructure.RTR = CAN_RTR_DATA;
-//	CanTxMsgStructure.DLC = data_length;
-//	for(i=0;i<data_length;i++){
-//		CanTxMsgStructure.Data[i] = buff[i];
-//	}
-//	CAN_Transmit(CAN1, &CanTxMsgStructure);
 }
-
-//void receive_flame()
-//{
-//	int receive_data[];
-//
-//	CanRxMsg CanRxMsgStructure;
-//	for(i=0;i<CanRxMsgStructure.DLC;i++)	receive_date[i] =  CanRxMsgStructure.Data[i];
-//
-//	return receive_date;
-//}
 
 void Can_DIO_OutputPin(u8 board, u8 pin, u8 status)
 {
@@ -133,7 +109,7 @@ void Can_DIO_OutputPin(u8 board, u8 pin, u8 status)
 	buff[0] |= pin<<1;
 	buff[0] |= status;
 
-	SendFrame(C_DIO, board, buff, 1);
+	CanSendFrame(C_DIO, board, buff, 1);
 }
 
 void Can_Motor_Drive(can_md_config_t* config, u8 ch, u8 pwm)
@@ -151,14 +127,14 @@ void Can_Motor_Drive(can_md_config_t* config, u8 ch, u8 pwm)
 	}
 	buff[2] |= ABS_VAL(pwm)<<1;
 
-	SendFrame(config->type, config->board, buff, 3);
+	CanSendFrame(config->type, config->board, buff, 3);
 }
 
 void EmergencyStop(int stop)
 {
 	CanTxMsg CanTxMsgStructure;
-	CanTxMsgStructure.StdId = 0x00;
-	CanTxMsgStructure.ExtId = 0x00;
+	CanTxMsgStructure.StdId = 0;
+	CanTxMsgStructure.ExtId = 0;
 	CanTxMsgStructure.IDE = CAN_ID_STD;
 	CanTxMsgStructure.RTR = CAN_RTR_DATA;
 	CanTxMsgStructure.DLC = 8;

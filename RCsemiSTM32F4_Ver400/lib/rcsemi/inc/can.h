@@ -48,7 +48,7 @@ typedef struct{
 
 uint8_t CanInit(void);
 void FilterConfig();
-void SendFrame(u8 type, u8 add, u8* buff, u8 data_length);
+void CanSendFrame(u8 type, u8 addr, u8* buff, u8 data_length);
 void Can_DIO_OutputPin(u8 board, u8 pin, u8 status);
 void Can_Motor_Drive(can_md_config_t* config, u8 ch, u8 pwm);
 void EmergencyStop(int stop);

@@ -67,7 +67,7 @@ void Bluetooth_USART_Init(int baud)
 	USART_Init(USART6, &USART_InitStructure);
 
 	NVIC_InitTypeDef NVIC_InitStructure;
-	NVIC_InitStructure.NVIC_IRQChannel						= USART2_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannel						= USART6_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority			= 0;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority	= 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd					= ENABLE;

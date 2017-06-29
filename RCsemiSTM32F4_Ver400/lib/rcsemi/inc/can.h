@@ -38,6 +38,8 @@
 #define C_ADC 0x08
 #define C_ENC 0x09
 
+typedef enum {ES_ENABLE = 0, ES_DISABLE = !ES_ENABLE} ES_Status;
+
 typedef struct{
 	u8 Type;
 	u8 Mode;
@@ -51,6 +53,6 @@ void FilterConfig();
 void CanSendFrame(u8 Type, u8 Addr, u8* Buff, u8 DataLength, u8 FrameMode);
 void CanDioOutputPin(u8 Board, u8 Pin, u8 Status);
 void CanMotorDrive(can_md_config_t* Config, u8 Ch, u8 Pwm);
-void EmergencyStop(int Stop);
+void EmergencyStop(ES_Status Stop);
 
 #endif /* __CAN_H__ */

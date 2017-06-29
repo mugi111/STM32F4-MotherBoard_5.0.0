@@ -130,7 +130,7 @@ void CanMotorDrive(can_md_config_t* Config, u8 Ch, u8 Pwm)
 	CanSendFrame(Config->Type, Config->Board, Buff, 3, CAN_RTR_DATA);
 }
 
-void EmergencyStop(int Stop)
+void EmergencyStop(ES_Status Stop)
 {
 	CanTxMsg CanTxMsgStructure;
 	CanTxMsgStructure.StdId = 0;

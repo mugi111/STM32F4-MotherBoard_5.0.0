@@ -64,27 +64,48 @@ uint8_t CanInit(void)
 
 	init = CAN_Init(CAN1, &CAN_InitStructure);
 
+
+	CAN_FilterInitTypeDef  CAN_FilterInitStructure;
+	CAN_FilterInitStructure.CAN_FilterMode = CAN_FilterMode_IdList;
+	CAN_FilterInitStructure.CAN_FilterMaskIdHigh = 0x0000;
+	CAN_FilterInitStructure.CAN_FilterMaskIdLow = 0x0000;
+	CAN_FilterInitStructure.CAN_FilterScale = CAN_FilterScale_32bit;
+	CAN_FilterInitStructure.CAN_FilterIdHigh = 0x0000;
+	CAN_FilterInitStructure.CAN_FilterIdLow = 0x1;
+	CAN_FilterInitStructure.CAN_FilterFIFOAssignment = CAN_FIFO0;
+	CAN_FilterInitStructure.CAN_FilterNumber = 0;
+
+	CAN_FilterInitStructure.CAN_FilterActivation = ENABLE;
+	CAN_FilterInit(&CAN_FilterInitStructure);
+
 	return init;
 }
 
-void FilterConfig()
-{
-    CAN_FilterInitTypeDef  CAN_FilterInitStructure;
-    CAN_FilterInitStructure.CAN_FilterMode = CAN_FilterMode_IdMask;
-    CAN_FilterInitStructure.CAN_FilterScale = CAN_FilterScale_32bit;
-    CAN_FilterInitStructure.CAN_FilterIdHigh = 0x0000;
-    CAN_FilterInitStructure.CAN_FilterIdLow = 0x0000;
-    CAN_FilterInitStructure.CAN_FilterMaskIdHigh = 0x0000;
-    CAN_FilterInitStructure.CAN_FilterMaskIdLow = 0x0000;
-    CAN_FilterInitStructure.CAN_FilterFIFOAssignment = 0;
-
-    CAN_FilterInitStructure.CAN_FilterActivation = ENABLE;
-    CAN_FilterInit(&CAN_FilterInitStructure);
-}
+//void FilterConfig(u8 FilterNum, u8 FilterId, u8 FilterMask, u8 FilterScale, u8 Fifo)
+//{
+//    CAN_FilterInitTypeDef  CAN_FilterInitStructure;
+//    if(FilterMask>0){
+//    	CAN_FilterInitStructure.CAN_FilterMode = CAN_FilterMode_IdMask;
+//    	CAN_FilterInitStructure.CAN_FilterMaskIdHigh = 0x0000;
+//    	CAN_FilterInitStructure.CAN_FilterMaskIdLow = FilterMask;
+//    }else{
+//    	CAN_FilterInitStructure.CAN_FilterMode = CAN_FilterMode_IdList;
+//    	CAN_FilterInitStructure.CAN_FilterMaskIdHigh = 0x0000;
+//    	CAN_FilterInitStructure.CAN_FilterMaskIdLow = 0x0000;
+//    }
+//    CAN_FilterInitStructure.CAN_FilterScale = FilterScale;
+//    CAN_FilterInitStructure.CAN_FilterIdHigh = 0x0000;
+//    CAN_FilterInitStructure.CAN_FilterIdLow = FilterId;
+//
+//    CAN_FilterInitStructure.CAN_FilterFIFOAssignment = Fifo;
+//    CAN_FilterInitStructure.CAN_FilterNumber = FilterNum;
+//
+//    CAN_FilterInitStructure.CAN_FilterActivation = ENABLE;
+//    CAN_FilterInit(&CAN_FilterInitStructure);
+//}
 
 void CanSendFrame(u8 Type, u8 Addr, u8* Buff, u8 DataLength, u8 FrameMode)
 {
-	int i;
 	u8 TransmitMailbox;
 	CanTxMsg TxMessage;
     TxMessage.StdId = 0x09;

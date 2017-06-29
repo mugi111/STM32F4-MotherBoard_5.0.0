@@ -30,7 +30,6 @@ int main(void)
 	InitSuccess = CanInit();
 	MB_PushSW_Init();
 	MB_LED_TurnOn();
-	FilterConfig();
     RxMsg.StdId = 0x00;
     RxMsg.IDE = CAN_ID_STD;
     RxMsg.DLC = 0;

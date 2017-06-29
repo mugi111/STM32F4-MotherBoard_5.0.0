@@ -5,12 +5,12 @@ STM32F407VGのマザーボード
 KiCADプロジェクト
 
 2. RCsemiSTM32F4_Ver400
-STM32F4MDライブラリ  
+STM32F4MBライブラリ  
 使用ライブラリ:SPD(Standard Peripheral Driver)  
 使用言語:C
 
 3. RCsemiSTM32F4_Ver500
-STM32F4MDライブラリ  
+STM32F4MBライブラリ  
 使用ライブラリ:HAL Driver  
 使用言語:C++
 

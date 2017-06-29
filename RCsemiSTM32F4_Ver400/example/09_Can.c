@@ -25,6 +25,7 @@ int main(void)
 
 	CanRxMsg RxMsg;
 
+
 	MB_LED_Init();
 	InitSuccess = CanInit();
 	MB_PushSW_Init();
@@ -35,14 +36,17 @@ int main(void)
     RxMsg.DLC = 0;
     RxMsg.Data[0] = 0x00;
     RxMsg.Data[1] = 0x00;
+	MB_LED_TurnOff();
 	while(1)
 	{
+		MB_LED_TurnOff();
 		if(InitSuccess == CAN_InitStatus_Success){
-			SendFrame(0, 0, buff, 5);
-			MB_LED_TurnOff();
+			CanSendFrame(0, 0, buff, 5, CAN_RTR_DATA);
+			if(CAN_TSR_TXOK0)	MB_LED_TurnOn();
 		}
 		CAN_Receive(CAN1, CAN_FIFO0, &RxMsg);
 
+//		delay_ms(1000);
 	}
 }
 

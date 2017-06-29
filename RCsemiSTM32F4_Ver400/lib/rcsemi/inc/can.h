@@ -39,18 +39,18 @@
 #define C_ENC 0x09
 
 typedef struct{
-	u8 type;
-	u8 mode;
-	u8 feq;
-	u8 board;
-	u8 zerostate;
+	u8 Type;
+	u8 Mode;
+	u8 Feq;
+	u8 Board;
+	u8 ZeroState;
 }can_md_config_t;
 
 uint8_t CanInit(void);
 void FilterConfig();
-void CanSendFrame(u8 type, u8 addr, u8* buff, u8 data_length);
-void Can_DIO_OutputPin(u8 board, u8 pin, u8 status);
-void Can_Motor_Drive(can_md_config_t* config, u8 ch, u8 pwm);
-void EmergencyStop(int stop);
+void CanSendFrame(u8 Type, u8 Addr, u8* Buff, u8 DataLength, u8 FrameMode);
+void CanDioOutputPin(u8 Board, u8 Pin, u8 Status);
+void CanMotorDrive(can_md_config_t* Config, u8 Ch, u8 Pwm);
+void EmergencyStop(int Stop);
 
 #endif /* __CAN_H__ */

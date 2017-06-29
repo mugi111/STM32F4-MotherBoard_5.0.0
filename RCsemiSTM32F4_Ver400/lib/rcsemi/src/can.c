@@ -102,35 +102,35 @@ void CanSendFrame(u8 Type, u8 Addr, u8* Buff, u8 DataLength, u8 FrameMode)
     }
 }
 
-void Can_DIO_OutputPin(u8 board, u8 pin, u8 status)
+void CanDioOutputPin(u8 Board, u8 Pin, u8 Status)
 {
-	u8 buff[3] = {0	};
+	u8 Buff[3] = {0};
 
-	buff[0] |= pin<<1;
-	buff[0] |= status;
+	Buff[0] |= Pin<<1;
+	Buff[0] |= Status;
 
-	CanSendFrame(C_DIO, board, buff, 1);
+	CanSendFrame(C_DIO, Board, Buff, 1, CAN_RTR_DATA);
 }
 
-void Can_Motor_Drive(can_md_config_t* config, u8 ch, u8 pwm)
+void CanMotorDrive(can_md_config_t* Config, u8 Ch, u8 Pwm)
 {
-	u8 buff[3] = {0};
+	u8 Buff[3] = {0};
 
-	buff[0] |= config->mode<<4;
-	buff[0] |= config->feq;
-	buff[1] |= ch<<4;
-	buff[1] |= config->zerostate;
-	if(pwm > 0){
-		buff[2] = 1;
+	Buff[0] |= Config->Mode<<4;
+	Buff[0] |= Config->Feq;
+	Buff[1] |= Ch<<4;
+	Buff[1] |= Config->ZeroState;
+	if(Pwm > 0){
+		Buff[2] = 1;
 	}else {
-		buff[2] = 0;
+		Buff[2] = 0;
 	}
-	buff[2] |= ABS_VAL(pwm)<<1;
+	Buff[2] |= ABS_VAL(Pwm)<<1;
 
-	CanSendFrame(config->type, config->board, buff, 3);
+	CanSendFrame(Config->Type, Config->Board, Buff, 3, CAN_RTR_DATA);
 }
 
-void EmergencyStop(int stop)
+void EmergencyStop(int Stop)
 {
 	CanTxMsg CanTxMsgStructure;
 	CanTxMsgStructure.StdId = 0;
@@ -139,7 +139,7 @@ void EmergencyStop(int stop)
 	CanTxMsgStructure.RTR = CAN_RTR_DATA;
 	CanTxMsgStructure.DLC = 8;
 	for(int i=0;i<8;i++){
-		CanTxMsgStructure.Data[i] = stop;
+		CanTxMsgStructure.Data[i] = Stop;
 	}
 
 	CAN_Transmit(CAN1, &CanTxMsgStructure);

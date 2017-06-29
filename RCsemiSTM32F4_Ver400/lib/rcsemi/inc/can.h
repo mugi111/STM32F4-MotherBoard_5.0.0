@@ -52,6 +52,7 @@ uint8_t CanInit(void);
 //void FilterConfig();
 void CanSendFrame(u8 Type, u8 Addr, u8* Buff, u8 DataLength, u8 FrameMode);
 void CanDioOutputPin(u8 Board, u8 Pin, u8 Status);
+//void CanDioPinStatus(u8 Board, u8 Pin);
 void CanMotorDrive(can_md_config_t* Config, u8 Ch, u8 Pwm);
 void EmergencyStop(ES_Status Stop);
 

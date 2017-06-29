@@ -125,13 +125,25 @@ void CanSendFrame(u8 Type, u8 Addr, u8* Buff, u8 DataLength, u8 FrameMode)
 
 void CanDioOutputPin(u8 Board, u8 Pin, u8 Status)
 {
-	u8 Buff[3] = {0};
+	u8 Buff[1] = {0};
 
-	Buff[0] |= Pin<<1;
+	Buff[0] |= 1;
+	Buff[0] |= Pin<<2;
 	Buff[0] |= Status;
 
 	CanSendFrame(C_DIO, Board, Buff, 1, CAN_RTR_DATA);
 }
+//
+//void CanDioPinStatus(u8 Board, u8 Pin)
+//{
+//	u8 Buff[1] = {0};
+//
+//	Buff[0] |= 0;
+//	Buff[0] |= Pin<<2;
+//	Buff[0] |= Status;
+//
+//	CanSendFrame(C_DIO, Board, Buff, 1, CAN_RTR_DATA);
+//}
 
 void CanMotorDrive(can_md_config_t* Config, u8 Ch, u8 Pwm)
 {

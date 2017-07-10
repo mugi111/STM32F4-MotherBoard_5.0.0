@@ -1,32 +1,32 @@
 /***************************************************************************
- *	@ƒtƒ@ƒCƒ‹–¼		:	example.h
- *	@ŠT—v		:	ŽÀs‚·‚éƒTƒ“ƒvƒ‹‚ðƒRƒƒ“ƒgƒAƒEƒg‚©‚ç‚Í‚¸‚·‚ÆCƒTƒ“ƒvƒ‹‚ªŽÀs‚³‚ê‚Ü‚·D
- *					ƒRƒƒ“ƒgƒAƒEƒg‚ðŠO‚·ƒTƒ“ƒvƒ‹‚Íˆê‚Â‚É‚µ‚È‚¢‚ÆƒRƒ“ƒpƒCƒ‹ƒGƒ‰[‚ª”­¶‚µ‚Ü‚·D
- *					ˆÈ‰º‚ÉŠeƒTƒ“ƒvƒ‹‚ÌŠT—v‚ðŽ¦‚µ‚Ü‚·D
+ *	@ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½		:	example.h
+ *	@ï¿½Tï¿½v		:	ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½gï¿½Aï¿½Eï¿½gï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ÆCï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½D
+ *					ï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½gï¿½Aï¿½Eï¿½gï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Íˆï¿½Â‚É‚ï¿½ï¿½È‚ï¿½ï¿½ÆƒRï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½D
+ *					ï¿½È‰ï¿½ï¿½ÉŠeï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ÌŠTï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½D
  *
- *					[00_Model.c]		:	‚·‚×‚Ä‚Ì‚Ð‚ÈŒ`‚ðŽ¦‚·ƒTƒ“ƒvƒ‹‚Å‚·D
- *											ƒTƒ“ƒvƒ‹Ž©‘Ì‚Í‰½‚Ì“®ì‚à‚µ‚Ü‚¹‚ñD
- *					[01_DigitalIO.c]	:	DigitalIOƒ|[ƒg‚Ì“üo—Í‚ð‚µ‚Ü‚·D
- *					[02_MotherBoard.c]	:	ƒ}ƒU[ƒ{[ƒhã‚ÌŠe‹@”\CLED*2CƒvƒbƒVƒ…ƒXƒCƒbƒ`*2C
- *											4ƒrƒbƒgƒ[ƒ^ƒŠ[ƒXƒCƒbƒ`‚ð“®ì‚³‚¹‚éD
- *											Œ‹‰Ê‚ÍDigitalIO‚Ìo—Í‚ÅŠm”F‚·‚é
- *					[03_Motor.c]		:	DigitalIOƒ|[ƒg‚©‚çƒ‚[ƒ^ƒhƒ‰ƒCƒo‚ð—˜—p‚·‚éD
- *					[04_PSpad.c]		:	PSƒRƒ“ƒgƒ[ƒ‰‚ðŽg‚Á‚Äƒ‚[ƒ^‚ð§Œä‚·‚éD
- *											ŠÈ’P‚Èƒƒ{ƒbƒg‚Í‚±‚ê‚ðŠî‚ÉƒvƒƒOƒ‰ƒ€‚µ‚Ä‚¢‚­‚Æ‚æ‚¢D
+ *					[00_Model.c]		:	ï¿½ï¿½ï¿½×‚Ä‚Ì‚Ð‚ÈŒ`ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Å‚ï¿½ï¿½D
+ *											ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½Ì‚Í‰ï¿½ï¿½Ì“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½D
+ *					[01_DigitalIO.c]	:	DigitalIOï¿½|ï¿½[ï¿½gï¿½Ì“ï¿½ï¿½oï¿½Í‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½D
+ *					[02_MotherBoard.c]	:	ï¿½}ï¿½Uï¿½[ï¿½{ï¿½[ï¿½hï¿½ï¿½ÌŠeï¿½@ï¿½\ï¿½CLED*2ï¿½Cï¿½vï¿½bï¿½Vï¿½ï¿½ï¿½Xï¿½Cï¿½bï¿½`*2ï¿½C
+ *											4ï¿½rï¿½bï¿½gï¿½ï¿½ï¿½[ï¿½^ï¿½ï¿½ï¿½[ï¿½Xï¿½Cï¿½bï¿½`ï¿½ð“®ì‚³ï¿½ï¿½ï¿½ï¿½D
+ *											ï¿½ï¿½ï¿½Ê‚ï¿½DigitalIOï¿½Ìoï¿½Í‚ÅŠmï¿½Fï¿½ï¿½ï¿½ï¿½
+ *					[03_Motor.c]		:	DigitalIOï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½çƒ‚ï¿½[ï¿½^ï¿½hï¿½ï¿½ï¿½Cï¿½oï¿½ð—˜—pï¿½ï¿½ï¿½ï¿½D
+ *					[04_PSpad.c]		:	PSï¿½Rï¿½ï¿½ï¿½gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½Äƒï¿½ï¿½[ï¿½^ï¿½ð§Œä‚·ï¿½ï¿½D
+ *											ï¿½È’Pï¿½Èƒï¿½ï¿½{ï¿½bï¿½gï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éƒvï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½Æ‚æ‚¢ï¿½D
  *					[05_RotaryENC.c]	:
  *					[06_ADC.c]			:
  *					[09_Can.c]			:
  *
- *	@ƒo[ƒWƒ‡ƒ“		:	3.0.0
- *	@ŠJ”­ŽÒ		:	ƒLƒlƒNƒg
- *					‚Þ‚¬
- *	@Žg—pŠÂ‹«		:	STM32F4DISCOVERY, MB_Ver3, MB_Ver4, MB_Ver5, Coocox CoIDE
+ *	@ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½		:	3.0.0
+ *	@ï¿½Jï¿½ï¿½ï¿½ï¿½		:	ï¿½Lï¿½lï¿½Nï¿½g
+ *					ï¿½Þ‚ï¿½
+ *	@ï¿½gï¿½pï¿½Â‹ï¿½		:	STM32F4DISCOVERY, MB_Ver3, MB_Ver4, MB_Ver5, Coocox CoIDE
  **************************************************************************/
 
 #ifndef __EXAMPLE_H__
 #define __EXAMPLE_H__
 
-//#define __00_MODEL__		1
+#define __00_MODEL__		1
 //#define __01_DIGITALIO__	1
 //#define __02_MB__			1
 //#define __03_MOTOR__		1
@@ -34,7 +34,7 @@
 //#define __05_ROTARYENC__	1
 //#define __06_ADC__		1
 
-#define __09_CAN__		1
+//#define __09_CAN__		1
 
 //#define __08_TOUCH_PANEL__
 

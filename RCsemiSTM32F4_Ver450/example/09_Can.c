@@ -1,9 +1,9 @@
 /***************************************************************************
- *	@ƒtƒ@ƒCƒ‹–¼		:	09_Can.c
- *	@ŠT—v		:	CAN_Test
- *	@ƒo[ƒWƒ‡ƒ“		:	0.0.1
- *	@ŠJ”­Ò		: mugi
- *	@g—pŠÂ‹«		:	STM32F4DISCOVERY, MB_Ver5, Coocox CoIDE
+ *	@ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½		:	09_Can.c
+ *	@ï¿½Tï¿½v		:	CAN_Test
+ *	@ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½		:	0.0.1
+ *	@ï¿½Jï¿½ï¿½ï¿½ï¿½		: mugi
+ *	@ï¿½gï¿½pï¿½Â‹ï¿½		:	STM32F4DISCOVERY, MB_Ver5, Coocox CoIDE
  **************************************************************************/
 
 #include "example.h"
@@ -19,7 +19,6 @@ int main(void)
 {
 	SystemCoreClockUpdate();
 
-//	u8 pushSW_State = 0;
 	u8 InitSuccess = 0;
 	u8 buff[8] = {1, 1, 1, 1, 1, 0, 0, 0};
 
@@ -30,28 +29,25 @@ int main(void)
 	InitSuccess = CanInit();
 	MB_PushSW_Init();
 	MB_LED_TurnOn();
-    RxMsg.StdId = 0x00;
-    RxMsg.IDE = CAN_ID_STD;
-    RxMsg.DLC = 0;
-    RxMsg.Data[0] = 0x00;
-    RxMsg.Data[1] = 0x00;
-	MB_LED_TurnOff();
+   RxMsg.StdId = 0x00;
+   RxMsg.IDE = CAN_ID_STD;
+   RxMsg.DLC = 0;
+   RxMsg.Data[0] = 0x00;
+   RxMsg.Data[1] = 0x00;
+   MB_LED_TurnOff();
 	while(1)
 	{
 		MB_LED_TurnOff();
 		if(InitSuccess == CAN_InitStatus_Success){
 			CanSendFrame(0, 0, buff, 5, CAN_RTR_DATA);
-			if(CAN_TSR_TXOK0)	MB_LED_TurnOn();
+			if(CAN_TSR_TXOK0)		MB_LED_TurnOn();
 		}
-		CAN_Receive(CAN1, CAN_FIFO0, &RxMsg);
-
-//		delay_ms(1000);
 	}
 }
 
 
 /******************************/
-/* ªª@ˆÈã‚ªƒTƒ“ƒvƒ‹@ªª */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½@ï¿½Èã‚ªï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½ï¿½ */
 /******************************/
 
 #endif /* __09_Can__ */

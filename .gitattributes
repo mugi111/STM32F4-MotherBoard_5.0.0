@@ -1,7 +1,7 @@
-/RCsemiSTM32F4_Ver400/lib/* linguist-vendored
+RCsemiSTM32F4_Ver400/lib/* linguist-vendored
 
-/RCsemiSTM32F4_Ver450/CMSIS linguist-vendored
-/RCsemiSTM32F4_Ver450/StdPeriph_Driver linguist-vendored
-/RCsemiSTM32F4_Ver450/Utilities linguist-vendored
-/RCsemiSTM32F4_Ver500/RCsemiSTM32F4_Ver500/CMSIS linguist-vendored
-/RCsemiSTM32F4_Ver500/RCsemiSTM32F4_Ver500/HAL_Driver linguist-vendored
+RCsemiSTM32F4_Ver450/CMSIS/* linguist-vendored
+RCsemiSTM32F4_Ver450/StdPeriph_Driver/* linguist-vendored
+RCsemiSTM32F4_Ver450/Utilities/* linguist-vendored
+RCsemiSTM32F4_Ver500/RCsemiSTM32F4_Ver500/CMSIS/* linguist-vendored
+RCsemiSTM32F4_Ver500/RCsemiSTM32F4_Ver500/HAL_Driver/* linguist-vendored

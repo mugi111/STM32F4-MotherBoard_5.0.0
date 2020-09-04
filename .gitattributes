@@ -1,0 +1,7 @@
+/RCsemiSTM32F4_Ver400/lib/*
+
+/RCsemiSTM32F4_Ver450/CMSIS
+/RCsemiSTM32F4_Ver450/StdPeriph_Driver
+/RCsemiSTM32F4_Ver450/Utilities
+/RCsemiSTM32F4_Ver500/RCsemiSTM32F4_Ver500/CMSIS
+/RCsemiSTM32F4_Ver500/RCsemiSTM32F4_Ver500/HAL_Driver
